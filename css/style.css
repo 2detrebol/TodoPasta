@@ -442,7 +442,6 @@ header {
 .form {
   display: flex;
   justify-content: center;
-  font-size: 1.2rem;
   font-weight: 600;
   font-family: "Raleway", sans-serif;
   margin: 0.8rem;
@@ -457,7 +456,6 @@ header {
   font-family: "Raleway", sans-serif;
   padding-left: 0.5rem;
   display: block;
-  align-self: center;
 }
 
 textarea::placeholder,
@@ -500,7 +498,6 @@ input::placeholder {
   border: solid 1px #000000;
   font-weight: 600;
   margin-top: 1rem;
-  margin-left: -3.5rem;
 }
 
 #newsletter {
@@ -588,7 +585,7 @@ input::placeholder {
 
 .wave {
   top: 75%;
-  left: -93%;
+  left: -190%;
   width: 68rem;
   height: 71.5rem;
   background-color: #ffffff;
@@ -677,11 +674,8 @@ input::placeholder {
 
 .tabla {
   font-family: "Raleway", sans-serif;
-  position: absolute;
-  top: 13em;
-  left: 17em;
-  width: auto;
-  height: auto;
+  display: flex;
+  justify-content: center;
   border-collapse: separate;
   border-color: var(--rojo);
 }
@@ -702,26 +696,21 @@ ol li {
 
 /* ESTILO PARA WEBS "ABOUT" */
 
-main {
-  top: 2rem;
-  height: auto;
+.sobreNosotros {
+  display: flex;
+  justify-content: center;
+  height: 20rem;
 }
 
-main h1 {
+.sobreNosotros h1 {
   font-family: "Raleway", sans-serif;
-  position: absolute;
-  top: 7em;
-  left: 40%;
   color: var(--rojo);
 }
 
 /*ESTILO PARA RELLENAS*/
 
 #grillaRellena {
-  position: absolute;
-  top: 27vh;
   width: 95vw;
-  height: 96vh;
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
@@ -990,12 +979,8 @@ main h1 {
 
 #publicidadAside {
   grid-area: publicidad;
-  position: absolute;
-  top: -16vh;
   background-color: var(--rojo);
   box-shadow: 0px 0px 4px 4px var(--rojo);
-  width: 14vw;
-  height: 248vh;
 }
 
 #banner1 {
@@ -1031,7 +1016,7 @@ main h1 {
   top: -0.5vh;
   background-color: var(--rojo);
   box-shadow: 0px 0px 4px 4px var(--rojo);
-  width: 109%;
+  max-width: 100vw;
   z-index: -5;
 }
 
@@ -1056,42 +1041,39 @@ main h1 {
 }
 
 /*CSS PARA VARIOS*/
+.tituloVarios {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
 .tituloVarios h1 {
-  position: absolute;
-  top: 12rem;
-  left: 10rem;
   font-family: "Raleway";
 }
 
 #postres,
 #precocidos,
 #platos {
-  position: absolute;
-  left: 12rem;
   font-size: 1rem;
   color: #000000;
   font-family: "Raleway";
   font-size: 1.5rem;
+  width: 70%;
 }
 
 #postres {
-  top: 18rem;
-  height: 70vh;
   background-color: #4dc247;
 }
 
 #precocidos {
-  top: 48rem;
-  width: auto;
-  height: 70vh;
   background-color: #bc2a8d;
 }
 
 #platos {
-  top: 78rem;
-  width: auto;
-  height: 70vh;
   background-color: aqua;
+  margin-bottom: 2rem;
 }
 
 /*MEDIA QUERIES*/
@@ -1192,7 +1174,6 @@ main h1 {
   }
 
   #textA {
-    margin-left: 1.5rem;
     width: 80%;
   }
 
@@ -1423,7 +1404,6 @@ main h1 {
 
   #textA {
     font-size: 1.1rem;
-    margin-right: 2rem;
   }
 
   .formulario {
