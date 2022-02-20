@@ -672,28 +672,41 @@ input::placeholder {
 
 /* ESTILO PARA WEB "SECAS" */
 
-.tabla {
-  font-family: "Raleway", sans-serif;
-  display: flex;
+.contenedor {
+  max-width: 100vw;
+  text-align: center;
+}
+
+.row {
+  max-width: 100vw;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.titulito {
   justify-content: center;
-  border-collapse: separate;
-  border-color: var(--rojo);
-}
-
-tr th {
-  padding: 5px;
-  background: #000000;
+  align-items: center;
   color: var(--rojo);
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 3vw;
 }
 
-tr td {
-  padding: 10px 15px;
+.publicidad {
+  overflow: hidden;
+  height: 55rem;
+  background-color: #870000;
 }
 
-ol li {
-  list-style-position: inside;
+.publicidadF {
+  height: 5rem;
+  background: rgb(255, 85, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 85, 0, 1) 0%,
+    rgba(135, 0, 0, 1) 50%
+  );
 }
-
 /* ESTILO PARA WEBS "ABOUT" */
 
 .sobreNosotros {
