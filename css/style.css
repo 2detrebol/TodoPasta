@@ -685,6 +685,7 @@ input::placeholder {
   font-weight: 900;
   font-size: 5vw;
   margin-bottom: 0;
+  align-self: flex-start;
 }
 
 .card {
