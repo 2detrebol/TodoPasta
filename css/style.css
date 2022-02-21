@@ -736,7 +736,7 @@ input::placeholder {
   opacity: 0;
   transform: translateY(-3rem);
   transition-delay: 0.2s;
-  max-width: 70%;
+  max-width: 90%;
 }
 
 .card .card-content h5 {
