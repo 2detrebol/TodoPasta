@@ -694,6 +694,7 @@ background: rgb(255, 85, 0);
   font-weight: 900;
   font-size: 7vw;
   margin-bottom: 0;
+  align-self: flex-start;
 }
 
 .card {
