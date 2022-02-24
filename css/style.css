@@ -679,11 +679,20 @@ input::placeholder {
   --bs-gutter-y: 0;
 }
 
+.containerSecas {
+background: rgb(255, 85, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 85, 0, 1) 0%,
+    rgba(135, 0, 0, 1) 50%
+  );
+}
+
 .tituloSecas {
-  color: var(--rojo);
+  color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  font-size: 5vw;
+  font-size: 7vw;
   margin-bottom: 0;
 }
 
@@ -695,6 +704,7 @@ input::placeholder {
   border: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   align-items: center;
+  max-width: 90%;
 }
 
 .card .card-image img {
@@ -703,18 +713,18 @@ input::placeholder {
 
 .card .card-content {
   position: absolute;
-  bottom: -6rem;
+  bottom: -10rem;
   color: #870000;
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(35px);
   height: 45%;
   transition: bottom 1s ease-in;
   box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);  
 }
 
 .card:hover .card-content {
-  bottom: 0.5rem;
+  bottom: 0;
 }
 
 .card:hover .card-content h4,
@@ -722,12 +732,12 @@ input::placeholder {
 .card:hover .card-content i {
   transform: translateY(1rem);
   opacity: 1;
+  font-size: 3.3vw;
 }
 
 .card .card-content h4,
 .card .card-content h5,
-.card .card-content i {
-  font-size: 1.4vw;
+.card .card-content i {  
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
@@ -741,23 +751,18 @@ input::placeholder {
 
 .card .card-content h5 {
   transition: 0.5s;
-  font-weight: 200;
-  font-size: 1.1vw;
+  font-weight: 200;  
   letter-spacing: 2px;
 }
 
 .publicidad {
-  background-color: #870000;
+  color: #ffffff;
+  
 }
 
 .publicidadF {
   height: 5rem;
-  background: rgb(255, 85, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 85, 0, 1) 0%,
-    rgba(135, 0, 0, 1) 50%
-  );
+  
 }
 /* ESTILO PARA WEBS "ABOUT" */
 
