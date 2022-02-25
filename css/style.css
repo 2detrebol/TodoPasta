@@ -672,6 +672,12 @@ input::placeholder {
 
 /* ESTILO PARA WEB "SECAS" */
 
+
+.navbar-brand img {
+  max-width: 9vw;  
+}
+
+
 .row {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
