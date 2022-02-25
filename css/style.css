@@ -34,7 +34,7 @@ svg {
 
 header {
   background: #ffffff;
-  padding: 0.5rem 0;
+  padding: 0.1rem 0;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35);
   position: sticky;
   top: 0;
@@ -70,15 +70,16 @@ header {
 .nav-toggle {
   cursor: pointer;
   border: 2px solid rgba(51, 51, 51, 1);
-  width: 2.4rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   margin-right: 0.5rem;
   border-radius: 50%;
   background-color: var(--rojo);
   color: rgba(255, 255, 255, 0.55);
   transition: opacity 250ms ease;
   position: absolute;
-  right: 0;
+  right: 0;  
+  align-self: center;
 }
 
 .nav-toggle:focus,
@@ -134,8 +135,7 @@ header {
   margin-bottom: 2rem;
 }
 
-.nav__item {
-  margin-top: 2rem;
+.nav__item {  
   font-size: 1.3rem;
 }
 
@@ -153,14 +153,14 @@ header {
 
 .containerLogo {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: 0.5rem;
-  max-width: 3rem;
+  justify-content: space-evenly;  
+  max-width: 90vw;  
 }
 
 .logo img {
-  max-width: 11vw;
+  max-width: 9vw;
+  margin: 0;
+  padding-top: .2rem;
 }
 
 .leyenda {
@@ -168,10 +168,8 @@ header {
   font-size: 6vw;
   letter-spacing: 0.2rem;
   color: #000000;
-  position: absolute;
-  top: 0.8rem;
-  left: 18vw;
-  width: fit-content;
+  margin: 0;
+  align-self: center;  
 }
 
 .nav__link--button {
@@ -1161,8 +1159,7 @@ background: rgb(255, 85, 0);
     object-fit: cover;
   }
 
-  .nav-toggle {
-    margin-top: 0.7rem;
+  .nav-toggle {    
     height: 3rem;
     width: 3rem;
   }
@@ -1321,9 +1318,8 @@ background: rgb(255, 85, 0);
     align-items: flex-end;
     justify-content: space-evenly;
     height: auto;
-    position: relative;
-    top: 1.8rem;
-    left: 3rem;
+    position: relative;    
+    left: 5.5rem;
     width: 85vw;
   }
 
@@ -1394,7 +1390,7 @@ background: rgb(255, 85, 0);
 
   .nav__item {
     width: 8rem;
-    margin: 1.5rem 1.5rem 0 1.5rem;
+    margin: 0 1.5rem 0 1.5rem;
     font-size: 1.1rem;
   }
 
@@ -1521,9 +1517,13 @@ background: rgb(255, 85, 0);
   }
 }
 @media (min-width: 1200px) {
+.nav{
+  width: 90%;
+}
+
   .nav__item {
     width: 11rem;
-    margin: 2.3rem 2rem 0 2rem;
+    margin: 0 1rem 0 1rem;
     padding-left: 3.5rem;
     font-size: 1.2rem;
   }
@@ -1556,17 +1556,20 @@ background: rgb(255, 85, 0);
   }
 
   .nav {
-    width: 100%;
+    width: 90%;
   }
 
   .nav__list {
-    padding-left: 6rem;
+    padding-left: 4rem;
   }
 
   .nav__item {
     width: 12.5rem;
-    margin: 4rem 2.3rem 0 2.3rem;
-    font-size: 1.4rem;
+    margin: 0 1.5rem 0 1.5rem;   
+  }
+
+  .logo img {
+    max-width: 12vw;
   }
 
   .ContainerCarrousel {
@@ -1600,6 +1603,10 @@ background: rgb(255, 85, 0);
 }
 
 @media (min-width: 1900px) {
+  .container {
+    max-width: 1900px;
+  }
+  
   .containerLogo {
     margin-left: -10rem;
   }
