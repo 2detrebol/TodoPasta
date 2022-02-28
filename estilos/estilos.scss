@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import "secas";
 
 * {
   margin: 0;
@@ -674,7 +675,7 @@ input::placeholder {
 .navbar-brand img {
   max-width: 9vw;
 }
-
+/*
 .row {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
@@ -723,12 +724,12 @@ input::placeholder {
   transition: bottom 0.5s ease-in;
   box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
   justify-content: center;
-}
-
+}*/
+/*
 .card:hover .card-content {
   bottom: 0;
-}
-
+}*/
+/*
 .card .card-content h4,
 .card .card-content h5,
 .card .card-content i {
@@ -747,14 +748,14 @@ input::placeholder {
   transition: 0.5s;
   font-weight: 200;
   letter-spacing: 2px;
-}
-
+}*/
+/*
 .card:hover .card-content h4,
 .card:hover .card-content h5,
 .card:hover .card-content i {
   transform: translateY(1rem);
   opacity: 1;
-}
+}*/
 
 .publicidad {
   color: #ffffff;
