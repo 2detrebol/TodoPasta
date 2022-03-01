@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 .navbar-brand img {
   max-width: 9vw;
@@ -43,6 +44,22 @@
      object-fit: cover;
 }
 
+.containerSecas .card:hover .card-content,
+.containerSecas .card:focus .card-content {
+  bottom: 0;
+}
+
+.containerSecas .card:hover .card-content h4,
+.containerSecas .card:hover .card-content h5,
+.containerSecas .card:hover .card-content i,
+.containerSecas .card:focus .card-content h4,
+.containerSecas .card:focus .card-content h5,
+.containerSecas .card:focus .card-content i {
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+  opacity: 1;
+}
+
 .containerSecas .card .card-content {
   position: absolute;
   bottom: -25rem;
@@ -60,10 +77,6 @@
           justify-content: center;
 }
 
-.containerSecas .card .card-content:hover {
-  bottom: 0;
-}
-
 .containerSecas .card .card-content h4,
 .containerSecas .card .card-content h5,
 .containerSecas .card .card-content i {
@@ -79,14 +92,6 @@
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
   max-width: 90%;
-}
-
-.containerSecas .card .card-content h4:hover,
-.containerSecas .card .card-content h5:hover,
-.containerSecas .card .card-content i:hover {
-  -webkit-transform: translateY(1rem);
-          transform: translateY(1rem);
-  opacity: 1;
 }
 
 .containerSecas .card .card-content h5 {
