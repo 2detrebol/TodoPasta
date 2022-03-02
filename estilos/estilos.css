@@ -1056,11 +1056,7 @@ input::placeholder {
       grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
   grid-column-gap: 35px;
   grid-row-gap: 35px;
-      grid-template-areas: "titulo titulo titulo"
- "foto1 foto2 publicidad"
- "foto3 foto4 publicidad"
- "foto5 foto6 publicidad"
- "publicidadf publicidadf publicidadf";
+      grid-template-areas: "titulo titulo titulo" "foto1 foto2 publicidad" "foto3 foto4 publicidad" "foto5 foto6 publicidad" "publicidadf publicidadf publicidadf";
 }
 
 #tituloRellenas {
