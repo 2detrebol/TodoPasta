@@ -35,6 +35,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!--AOS ANIMACIONES SCROLL-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--FAVICON-->
     <link rel="shortcut icon" href="imagenes/dibu.png" type="image/x-icon" />
     <title>TODO PASTA</title>
@@ -83,7 +85,11 @@
           <div
             class="row col-md-12 col-lg-10 d-flex flex-wrap justify-content-evenly mb-4"
           >
-            <h1 class="text-center tituloSecas pt-4 pb-4">
+            <h1
+              data-aos="fade"
+              data-aos-delay="600"
+              class="text-center tituloSecas pt-4 pb-4"
+            >
               NUESTRAS PASTAS SECAS
             </h1>
             <div class="card col-md-5 mb-4">
@@ -240,5 +246,11 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS ANIMACIONES JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
