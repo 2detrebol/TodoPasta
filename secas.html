@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <!--CSS-->
-    <link rel="stylesheet" href="estilos/estilos.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
     <!--FONTAWESOME-->
     <link
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -35,7 +35,7 @@
     <!--HEADER-->
     <header>
       <!--NAV BAR-->
-      <div class="container">
+      <div class="containerNav">
         <div class="row">
           <div class="containerLogo">
             <a href="index.html" class="logo">
@@ -76,13 +76,17 @@
             class="row col-md-12 col-lg-10 d-flex flex-wrap justify-content-evenly mb-4"
           >
             <h1
-              data-aos="fade"
-              data-aos-delay="600"
+              data-aos="fade-down"
+              data-aos-duration="600"
               class="text-center tituloSecas pt-4 pb-4"
             >
               NUESTRAS PASTAS SECAS
             </h1>
-            <div class="card col-md-5 mb-4">
+            <div
+              data-aos="fade"
+              data-aos-duration="1500"
+              class="card col-md-5 mb-4"
+            >
               <div class="card-image">
                 <img
                   src="imagenes/Secas/caseritos.jpg"
@@ -100,7 +104,11 @@
                 <i>$ 740</i>
               </div>
             </div>
-            <div class="card col-md-5 mb-4">
+            <div
+              data-aos="fade"
+              data-aos-duration="1500"
+              class="card col-md-5 mb-4"
+            >
               <div class="card-image">
                 <img src="imagenes/Secas/fusiles.jpg" alt="Fideos Fusiles" />
               </div>
@@ -115,7 +123,11 @@
                 <i>$ 680</i>
               </div>
             </div>
-            <div class="card col-md-5 mb-4">
+            <div
+              data-aos="fade"
+              data-aos-duration="1500"
+              class="card col-md-5 mb-4"
+            >
               <div class="card-image">
                 <img src="imagenes/Secas/napoles.jpg" alt="Fideos Nápoles" />
               </div>
@@ -128,7 +140,11 @@
                 <i>$ 680</i>
               </div>
             </div>
-            <div class="card col-md-5 mb-4">
+            <div
+              data-aos="fade"
+              data-aos-duration="1500"
+              class="card col-md-5 mb-4"
+            >
               <div class="card-image">
                 <img src="imagenes/Secas/rigatti.jpg" alt="Fideos Rigatti" />
               </div>
@@ -141,7 +157,11 @@
                 <i>$ 680</i>
               </div>
             </div>
-            <div class="card col-md-5 mb-4">
+            <div
+              data-aos="fade"
+              data-aos-duration="1500"
+              class="card col-md-5 mb-4"
+            >
               <div class="card-image">
                 <img src="imagenes/Secas/noqui-papa.jpg" alt="Ñoquis de Papa" />
               </div>
@@ -154,7 +174,11 @@
                 <i>$ 720</i>
               </div>
             </div>
-            <div class="card col-md-5 mb-4">
+            <div
+              data-aos="fade"
+              data-aos-duration="1500"
+              class="card col-md-5 mb-4"
+            >
               <div class="card-image">
                 <img
                   src="imagenes/Secas/noqui-espinaca.jpg"
@@ -170,7 +194,11 @@
                 <i>$ 680</i>
               </div>
             </div>
-            <div class="card col-md-5 mb-4">
+            <div
+              data-aos="fade"
+              data-aos-duration="1500"
+              class="card col-md-5 mb-4"
+            >
               <div class="card-image">
                 <img
                   src="imagenes/Secas/noquis-calabaza.jpg"
@@ -186,7 +214,11 @@
                 <i>$ 730</i>
               </div>
             </div>
-            <div class="card col-md-5 mb-4">
+            <div
+              data-aos="fade"
+              data-aos-duration="1500"
+              class="card col-md-5 mb-4"
+            >
               <div class="card-image">
                 <img
                   src="imagenes/Secas/noquis-tricolor.jpg"
@@ -230,17 +262,16 @@
     </footer>
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Bootstrap en carpeta de JS fuera de CDN -->
+    <script src="js/bootstrap.js"></script>
     <!-- AOS ANIMACIONES JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        easing: "linear",
+        mirror: true,
+      });
     </script>
   </body>
 </html>

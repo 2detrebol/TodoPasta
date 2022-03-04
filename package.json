@@ -1,0 +1,20 @@
+{
+  "name": "todopasta",
+  "version": "1.0.0",
+  "description": "Este es mi proyecto para curso \"Desarrollo Web\" de Coder House durante el año 2022.",
+  "main": "index.js",
+  "scripts": {
+    "compilaSass": "sass --watch estilos/estilos.scss css/estilos.css "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2detrebol/TodoPasta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2detrebol/TodoPasta/issues"
+  },
+  "homepage": "https://github.com/2detrebol/TodoPasta#readme"
+}
