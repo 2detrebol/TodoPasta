@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
 .navbar-brand img {
   max-width: 8vw;
 }
@@ -74,14 +88,6 @@
   transition: 0.5s;
   font-weight: 200;
   letter-spacing: 2px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
 }
 
 :root {
@@ -460,6 +466,7 @@ header {
 }
 
 #panza1 {
+  max-width: 100vw;
   margin-top: -2.5rem;
 }
 
@@ -468,6 +475,7 @@ header {
   text-align: center;
   justify-content: center;
   flex-flow: column;
+  max-width: 100vw;
 }
 
 .contacto h3 {
@@ -598,7 +606,7 @@ input::placeholder {
 }
 
 .redes_container {
-  width: 100vw;
+  max-width: 90%;
 }
 
 .redes_container ul {
@@ -737,11 +745,6 @@ input::placeholder {
 }
 
 /*
-.row {
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
-}
-
 .containerSecas {
   background: rgb(255, 85, 0);
   background: linear-gradient(
@@ -1268,12 +1271,16 @@ input::placeholder {
 
   .direccion {
     margin-top: -3rem;
-    width: 90vw;
+    width: 45vw;
   }
 
   .contacto-form {
     margin-top: -1rem;
-    max-width: 100vw;
+    max-width: 45vw;
+  }
+
+  .formulario {
+    max-width: 45vw;
   }
 
   .form {
