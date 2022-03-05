@@ -1,35 +1,8 @@
+@import "general";
 @import "fonts";
 @import "variables";
 @import "secas-rellenas";
 @import "varios";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
-}
-.row {
-  margin: 0;
-}
-
-:root {
-  $colorRojo: #870000;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
-img {
-  max-width: 100%;
-}
-
-img,
-svg {
-  vertical-align: middle;
-}
 
 .container {
   width: 100%;

@@ -1,5 +1,27 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
 .navbar-brand img {
   max-width: 8vw;
 }
@@ -106,6 +128,9 @@
   background: #ff5500;
   background: linear-gradient(90deg, #ff5500 0%, #870000 50%);
   /*EACH*/
+  /*SE HACE CON MIXIN PERO SERÍA SEGUN COMENTADO ABAJO CON VARIABLES ES =*/
+  /*$ancho: 45%;
+  $alto: 23rem;*/
 }
 .containerVarios .row {
   --bs-gutter-x: 0;
@@ -119,12 +144,16 @@
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 5vw;
-  margin-bottom: 0;
   align-self: flex-start;
 }
+.containerVarios .tituloVarios h1,
+.containerVarios .tituloSalsas h1,
+.containerVarios .tituloPostres h1 {
+  font-size: 6vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
 .containerVarios .quesoRallado-fondo {
-  width: 90%;
-  height: 25rem;
   background-image: url("../imagenes/Varios/quesoRallado.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -132,9 +161,19 @@
   background-color: #ffffff;
   border-radius: 20px;
 }
+@media (max-width: 768px) {
+  .containerVarios .quesoRallado-fondo {
+    width: 90%;
+    height: 23rem;
+  }
+}
+@media (min-width: 769px) {
+  .containerVarios .quesoRallado-fondo {
+    width: 45%;
+    height: 22rem;
+  }
+}
 .containerVarios .fileto-fondo {
-  width: 90%;
-  height: 25rem;
   background-image: url("../imagenes/Varios/fileto.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -142,9 +181,19 @@
   background-color: #ffffff;
   border-radius: 20px;
 }
+@media (max-width: 768px) {
+  .containerVarios .fileto-fondo {
+    width: 90%;
+    height: 23rem;
+  }
+}
+@media (min-width: 769px) {
+  .containerVarios .fileto-fondo {
+    width: 45%;
+    height: 22rem;
+  }
+}
 .containerVarios .blanca-fondo {
-  width: 90%;
-  height: 25rem;
   background-image: url("../imagenes/Varios/blanca.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -152,9 +201,19 @@
   background-color: #ffffff;
   border-radius: 20px;
 }
+@media (max-width: 768px) {
+  .containerVarios .blanca-fondo {
+    width: 90%;
+    height: 23rem;
+  }
+}
+@media (min-width: 769px) {
+  .containerVarios .blanca-fondo {
+    width: 45%;
+    height: 22rem;
+  }
+}
 .containerVarios .cuatroQuesos-fondo {
-  width: 90%;
-  height: 25rem;
   background-image: url("../imagenes/Varios/cuatroQuesos.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -162,9 +221,19 @@
   background-color: #ffffff;
   border-radius: 20px;
 }
+@media (max-width: 768px) {
+  .containerVarios .cuatroQuesos-fondo {
+    width: 90%;
+    height: 23rem;
+  }
+}
+@media (min-width: 769px) {
+  .containerVarios .cuatroQuesos-fondo {
+    width: 45%;
+    height: 22rem;
+  }
+}
 .containerVarios .bolognesa-fondo {
-  width: 90%;
-  height: 25rem;
   background-image: url("../imagenes/Varios/bolognesa.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -172,9 +241,19 @@
   background-color: #ffffff;
   border-radius: 20px;
 }
+@media (max-width: 768px) {
+  .containerVarios .bolognesa-fondo {
+    width: 90%;
+    height: 23rem;
+  }
+}
+@media (min-width: 769px) {
+  .containerVarios .bolognesa-fondo {
+    width: 45%;
+    height: 22rem;
+  }
+}
 .containerVarios .pesto-fondo {
-  width: 90%;
-  height: 25rem;
   background-image: url("../imagenes/Varios/pesto.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -182,9 +261,19 @@
   background-color: #ffffff;
   border-radius: 20px;
 }
+@media (max-width: 768px) {
+  .containerVarios .pesto-fondo {
+    width: 90%;
+    height: 23rem;
+  }
+}
+@media (min-width: 769px) {
+  .containerVarios .pesto-fondo {
+    width: 45%;
+    height: 22rem;
+  }
+}
 .containerVarios .pollo-fondo {
-  width: 90%;
-  height: 25rem;
   background-image: url("../imagenes/Varios/pollo.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -192,15 +281,117 @@
   background-color: #ffffff;
   border-radius: 20px;
 }
+@media (max-width: 768px) {
+  .containerVarios .pollo-fondo {
+    width: 90%;
+    height: 23rem;
+  }
+}
+@media (min-width: 769px) {
+  .containerVarios .pollo-fondo {
+    width: 45%;
+    height: 22rem;
+  }
+}
 .containerVarios .scarparo-fondo {
-  width: 90%;
-  height: 25rem;
   background-image: url("../imagenes/Varios/scarparo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   margin: 2rem 0 2rem 0;
   background-color: #ffffff;
   border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .containerVarios .scarparo-fondo {
+    width: 90%;
+    height: 23rem;
+  }
+}
+@media (min-width: 769px) {
+  .containerVarios .scarparo-fondo {
+    width: 45%;
+    height: 22rem;
+  }
+}
+.containerVarios .arrolladoAtun-fondo {
+  background-image: url("../imagenes/Varios/arrolladoAtun.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 2rem 0 2rem 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .containerVarios .arrolladoAtun-fondo {
+    width: 90%;
+    height: 23rem;
+  }
+}
+@media (min-width: 769px) {
+  .containerVarios .arrolladoAtun-fondo {
+    width: 45%;
+    height: 22rem;
+  }
+}
+.containerVarios .arrolladoPollo-fondo {
+  background-image: url("../imagenes/Varios/arrolladoPollo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 2rem 0 2rem 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .containerVarios .arrolladoPollo-fondo {
+    width: 90%;
+    height: 23rem;
+  }
+}
+@media (min-width: 769px) {
+  .containerVarios .arrolladoPollo-fondo {
+    width: 45%;
+    height: 22rem;
+  }
+}
+.containerVarios .arrolladoVerdura-fondo {
+  background-image: url("../imagenes/Varios/arrolladoVerdura.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 2rem 0 2rem 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .containerVarios .arrolladoVerdura-fondo {
+    width: 90%;
+    height: 23rem;
+  }
+}
+@media (min-width: 769px) {
+  .containerVarios .arrolladoVerdura-fondo {
+    width: 45%;
+    height: 22rem;
+  }
+}
+.containerVarios .sandwichMiga-fondo {
+  background-image: url("../imagenes/Varios/sandwichMiga.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 2rem 0 2rem 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .containerVarios .sandwichMiga-fondo {
+    width: 90%;
+    height: 23rem;
+  }
+}
+@media (min-width: 769px) {
+  .containerVarios .sandwichMiga-fondo {
+    width: 45%;
+    height: 22rem;
+  }
 }
 .containerVarios .publicidad {
   display: flex;
@@ -232,31 +423,6 @@
     padding-top: 1rem;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
-}
-
-.row {
-  margin: 0;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
-img {
-  max-width: 100%;
-}
-
-img,
-svg {
-  vertical-align: middle;
-}
-
 .container {
   width: 100%;
   max-width: 1320px;

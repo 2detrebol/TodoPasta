@@ -18,26 +18,60 @@
     font-family: "Raleway", sans-serif;
     font-weight: 900;
     font-size: 5vw;
-    margin-bottom: 0;
     align-self: flex-start;
+    h1 {
+      font-size: 6vw;
+      font-family: "Raleway", sans-serif;
+      font-weight: 900;
+    }
   }
 
   /*EACH*/
-  $ancho: 45%;
-  $alto: 25rem;
+
+  /*SE HACE CON MIXIN PERO SERÍA SEGUN COMENTADO ABAJO CON VARIABLES ES =*/
+  @mixin tamaño($width, $height) {
+    width: $width;
+    height: $height;
+  }
+
+  /*$ancho: 45%;
+  $alto: 23rem;*/
 
   @each $salsa in quesoRallado, fileto, blanca, cuatroQuesos, bolognesa, pesto,
     pollo, scarparo
   {
     .#{$salsa}-fondo {
-      width: $ancho * 2;
-      height: $alto;
       background-image: url("../imagenes/Varios/#{$salsa}.jpg");
       background-position: center;
       background-repeat: no-repeat;
       margin: 2rem 0 2rem 0;
       background-color: $colorBlanco;
       border-radius: 20px;
+      @media (max-width: 768px) {
+        @include tamaño(45% * 2, 23rem);
+      }
+      @media (min-width: 769px) {
+        @include tamaño(45%, 22rem);
+      }
+    }
+  }
+
+  @each $preparados in arrolladoAtun, arrolladoPollo, arrolladoVerdura,
+    sandwichMiga
+  {
+    .#{$preparados}-fondo {
+      background-image: url("../imagenes/Varios/#{$preparados}.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 2rem 0 2rem 0;
+      background-color: $colorBlanco;
+      border-radius: 20px;
+      @media (max-width: 768px) {
+        @include tamaño(45% * 2, 23rem);
+      }
+      @media (min-width: 769px) {
+        @include tamaño(45%, 22rem);
+      }
     }
   }
 
