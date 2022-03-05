@@ -11,7 +11,9 @@
     overflow-x: hidden;
   }
 
-  .tituloVarios {
+  .tituloVarios,
+  .tituloSalsas,
+  .tituloPostres {
     color: $colorBlanco;
     font-family: "Raleway", sans-serif;
     font-weight: 900;
@@ -21,16 +23,21 @@
   }
 
   /*EACH*/
-  $ancho: 50%;
+  $ancho: 45%;
   $alto: 25rem;
 
-  @each $salsa in fileto, blanca {
+  @each $salsa in quesoRallado, fileto, blanca, cuatroQuesos, bolognesa, pesto,
+    pollo, scarparo
+  {
     .#{$salsa}-fondo {
       width: $ancho * 2;
       height: $alto;
-      background-image: url("../imagenes/Varios/#{salsa}.jpg");
+      background-image: url("../imagenes/Varios/#{$salsa}.jpg");
       background-position: center;
       background-repeat: no-repeat;
+      margin: 2rem 0 2rem 0;
+      background-color: $colorBlanco;
+      border-radius: 20px;
     }
   }
 

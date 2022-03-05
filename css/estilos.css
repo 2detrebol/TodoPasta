@@ -112,7 +112,9 @@
   --bs-gutter-y: 0;
   overflow-x: hidden;
 }
-.containerVarios .tituloVarios {
+.containerVarios .tituloVarios,
+.containerVarios .tituloSalsas,
+.containerVarios .tituloPostres {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
@@ -120,19 +122,85 @@
   margin-bottom: 0;
   align-self: flex-start;
 }
-.containerVarios .fileto-fondo {
-  width: 100%;
+.containerVarios .quesoRallado-fondo {
+  width: 90%;
   height: 25rem;
-  background-image: url("../imagenes/Varios/salsa.jpg");
+  background-image: url("../imagenes/Varios/quesoRallado.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  margin: 2rem 0 2rem 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.containerVarios .fileto-fondo {
+  width: 90%;
+  height: 25rem;
+  background-image: url("../imagenes/Varios/fileto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 2rem 0 2rem 0;
+  background-color: #ffffff;
+  border-radius: 20px;
 }
 .containerVarios .blanca-fondo {
-  width: 100%;
+  width: 90%;
   height: 25rem;
-  background-image: url("../imagenes/Varios/salsa.jpg");
+  background-image: url("../imagenes/Varios/blanca.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  margin: 2rem 0 2rem 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.containerVarios .cuatroQuesos-fondo {
+  width: 90%;
+  height: 25rem;
+  background-image: url("../imagenes/Varios/cuatroQuesos.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 2rem 0 2rem 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.containerVarios .bolognesa-fondo {
+  width: 90%;
+  height: 25rem;
+  background-image: url("../imagenes/Varios/bolognesa.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 2rem 0 2rem 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.containerVarios .pesto-fondo {
+  width: 90%;
+  height: 25rem;
+  background-image: url("../imagenes/Varios/pesto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 2rem 0 2rem 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.containerVarios .pollo-fondo {
+  width: 90%;
+  height: 25rem;
+  background-image: url("../imagenes/Varios/pollo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 2rem 0 2rem 0;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.containerVarios .scarparo-fondo {
+  width: 90%;
+  height: 25rem;
+  background-image: url("../imagenes/Varios/scarparo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 2rem 0 2rem 0;
+  background-color: #ffffff;
+  border-radius: 20px;
 }
 .containerVarios .publicidad {
   display: flex;
