@@ -102,6 +102,68 @@
     padding-bottom: 5rem;
   }
 }
+.containerVarios {
+  background: #ff5500;
+  background: linear-gradient(90deg, #ff5500 0%, #870000 50%);
+  /*EACH*/
+}
+.containerVarios .row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  overflow-x: hidden;
+}
+.containerVarios .tituloVarios {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 5vw;
+  margin-bottom: 0;
+  align-self: flex-start;
+}
+.containerVarios .fileto-fondo {
+  width: 100%;
+  height: 25rem;
+  background-image: url("../imagenes/Varios/salsa.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.containerVarios .blanca-fondo {
+  width: 100%;
+  height: 25rem;
+  background-image: url("../imagenes/Varios/salsa.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.containerVarios .publicidad {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  animation: flash 9s linear;
+  animation-iteration-count: infinite;
+}
+.containerVarios .publicidadF {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 6.5rem;
+  padding-left: 3.5rem;
+  padding-bottom: 1rem;
+  animation: flash 7s linear;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 1024px) {
+  .containerVarios .publicidad {
+    flex-direction: column;
+  }
+  .containerVarios .publicidad .publicidad {
+    padding-bottom: 8rem;
+    padding-top: 1rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -702,42 +764,6 @@ input::placeholder {
 .sobreNosotros h1 {
   font-family: "Raleway", sans-serif;
   color: #870000;
-}
-
-/*CSS PARA VARIOS*/
-.tituloVarios {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-}
-
-.tituloVarios h1 {
-  font-family: "Raleway";
-}
-
-#postres,
-#precocidos,
-#platos {
-  font-size: 1rem;
-  color: #000000;
-  font-family: "Raleway";
-  font-size: 1.5rem;
-  width: 70%;
-}
-
-#postres {
-  background-color: #4dc247;
-}
-
-#precocidos {
-  background-color: #bc2a8d;
-}
-
-#platos {
-  background-color: aqua;
-  margin-bottom: 2rem;
 }
 
 /*MEDIA QUERIES*/

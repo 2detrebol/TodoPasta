@@ -1,6 +1,7 @@
 @import "fonts";
 @import "variables";
 @import "secas-rellenas";
+@import "varios";
 
 * {
   margin: 0;
@@ -618,42 +619,6 @@ input::placeholder {
 .sobreNosotros h1 {
   font-family: "Raleway", sans-serif;
   color: $colorRojo;
-}
-
-/*CSS PARA VARIOS*/
-.tituloVarios {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-}
-
-.tituloVarios h1 {
-  font-family: "Raleway";
-}
-
-#postres,
-#precocidos,
-#platos {
-  font-size: 1rem;
-  color: #000000;
-  font-family: "Raleway";
-  font-size: 1.5rem;
-  width: 70%;
-}
-
-#postres {
-  background-color: #4dc247;
-}
-
-#precocidos {
-  background-color: #bc2a8d;
-}
-
-#platos {
-  background-color: aqua;
-  margin-bottom: 2rem;
 }
 
 /*MEDIA QUERIES*/

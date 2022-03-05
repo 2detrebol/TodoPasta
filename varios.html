@@ -61,7 +61,7 @@
                 <a class="nav__link" href="rellenas.html">Pastas Rellenas</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="varios.html">Preparados & Postres</a>
+                <a class="nav__link" href="varios.html">Salsas & Postres</a>
               </li>
             </ul>
           </nav>
@@ -69,18 +69,67 @@
       </div>
       <!--NAV BAR-->
     </header>
-
     <main>
-      <div class="tituloVarios">
-        <h1>POSTRES, PRECOCIDOS Y PLATOS LISTOS</h1>
-        <div>
-          <h2 id="postres">NUESTROS POSTRES</h2>
-        </div>
-        <div>
-          <h2 id="precocidos">NUESTROS PRECOCIDOS</h2>
-        </div>
-        <div>
-          <h2 id="platos">NUESTROS PLATOS</h2>
+      <div class="container-fluid p-0 containerVarios">
+        <div class="row">
+          <div
+            class="row col-md-12 col-lg-10 d-flex flex-wrap justify-content-evenly mb-4"
+          >
+            <div
+              data-aos="fade"
+              data-aos-duration="500"
+              data-aos-offset="110"
+              class="text-center tituloVarios pt-4 pb-4"
+            >
+              <h1>SALSAS Y POSTRES</h1>
+            </div>
+            <h2
+              data-aos="fade"
+              data-aos-duration="500"
+              data-aos-offset="110"
+              class="text-center tituloSalsas pt-4 pb-4"
+            >
+              NUESTRAS SALSAS
+            </h2>
+            <div class="fileto-fondo"></div>
+            <div class="blanca-fondo"></div>
+
+            <!-- hasta aca llegan las salsas-->
+            <h2
+              data-aos="fade"
+              data-aos-duration="500"
+              data-aos-offset="110"
+              class="text-center tituloPostres pt-4 pb-4"
+            >
+              NUESTROS POSTRES
+            </h2>
+            <div
+              data-aos="fade"
+              data-aos-duration="600"
+              class="card col-md-5 mb-4"
+            >
+              <!--todas los pOSTRES-->
+            </div>
+          </div>
+          <div class="col-12 col-lg-2 publicidad">
+            <div class="publicidad publicidad__espresso">
+              <img src="imagenes/banner1.jpg" alt="Publicidad Espresso" />
+            </div>
+            <div class="publicidad publicidad__latte">
+              <img src="imagenes/banner2.jpg" alt="Publicidad Latte" />
+            </div>
+            <div class="publicidad publicidad__matcha">
+              <img src="imagenes/banner3.jpg" alt="Publicidad Matcha" />
+            </div>
+          </div>
+          <div class="col-12 publicidadF">
+            <div class="publicidadF publicidadF__havanna1">
+              <img src="imagenes/havanna1.png" alt="Publicidad Havanna 1" />
+            </div>
+            <div class="publicidadF publicidad__havanna">
+              <img src="imagenes/havanna.png" alt="Publicidad Havanna" />
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -100,5 +149,11 @@
     </footer>
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
+
+    <!-- Bootstrap en carpeta de JS fuera de CDN -->
+    <script src="js/bootstrap.js"></script>
+    <!-- AOS ANIMACIONES JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
   </body>
 </html>
