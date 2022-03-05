@@ -15,7 +15,7 @@
     overflow-x: hidden;
   }
   .tituloSecas {
-    color: #ffffff;
+    color: $colorBlanco;
     font-family: "Raleway", sans-serif;
     font-weight: 900;
     font-size: 5vw;
@@ -30,9 +30,12 @@
     border: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     align-items: center;
-    max-width: 90%;
-    .card-image img {
-      object-fit: cover;
+    max-width: 70%;
+    .card-image {
+      width: 75%;
+      .card-image img {
+        object-fit: cover;
+      }
     }
     &:hover .card-content,
     &:focus .card-content {
@@ -50,7 +53,7 @@
     .card-content {
       position: absolute;
       bottom: -25rem;
-      color: #870000;
+      color: $colorRojo;
       background: rgba(255, 255, 255, 0.2);
       backdrop-filter: blur(35px);
       height: 100%;
@@ -65,6 +68,7 @@
         text-align: center;
         transition: 1.7s;
         font-weight: 600;
+        font-size: 0.8rem;
         opacity: 0;
         transform: translateY(-3rem);
         transition-delay: 0.2s;
@@ -93,7 +97,7 @@
     justify-content: center;
     padding-right: 6.5rem;
     padding-left: 3.5rem;
-    animation: flash 9s linear;
+    animation: flash 7s linear;
     animation-iteration-count: infinite;
   }
 }
@@ -102,7 +106,7 @@
   .containerSecas .publicidad {
     flex-direction: column;
     .publicidad {
-      padding-bottom: 8rem;
+      padding-bottom: 5rem;
     }
   }
 }

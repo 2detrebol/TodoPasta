@@ -29,21 +29,18 @@
   border: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   align-items: center;
-  max-width: 90%;
+  max-width: 70%;
 }
-.containerSecas .card .card-image img {
+.containerSecas .card .card-image {
+  width: 75%;
+}
+.containerSecas .card .card-image .card-image img {
   object-fit: cover;
 }
-.containerSecas .card:hover .card-content,
-.containerSecas .card:focus .card-content {
+.containerSecas .card:hover .card-content, .containerSecas .card:focus .card-content {
   bottom: 0;
 }
-.containerSecas .card:hover .card-content h4,
-.containerSecas .card:hover .card-content h5,
-.containerSecas .card:hover .card-content i,
-.containerSecas .card:focus .card-content h4,
-.containerSecas .card:focus .card-content h5,
-.containerSecas .card:focus .card-content i {
+.containerSecas .card:hover .card-content h4, .containerSecas .card:hover .card-content h5, .containerSecas .card:hover .card-content i, .containerSecas .card:focus .card-content h4, .containerSecas .card:focus .card-content h5, .containerSecas .card:focus .card-content i {
   transform: translateY(1rem);
   opacity: 1;
 }
@@ -66,6 +63,7 @@
   text-align: center;
   transition: 1.7s;
   font-weight: 600;
+  font-size: 0.8rem;
   opacity: 0;
   transform: translateY(-3rem);
   transition-delay: 0.2s;
@@ -92,7 +90,7 @@
   justify-content: center;
   padding-right: 6.5rem;
   padding-left: 3.5rem;
-  animation: flash 9s linear;
+  animation: flash 7s linear;
   animation-iteration-count: infinite;
 }
 
@@ -101,7 +99,7 @@
     flex-direction: column;
   }
   .containerSecas .publicidad .publicidad {
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
   }
 }
 * {
@@ -114,10 +112,6 @@
 
 .row {
   margin: 0;
-}
-
-:root {
-  --rojo: #870000;
 }
 
 body {
@@ -153,19 +147,6 @@ header {
   width: 100%;
 }
 
-.heading-line::before {
-  content: "";
-  width: 10rem;
-  height: 0.2rem;
-  display: block;
-  margin: 0 auto;
-  background-color: #55ae36;
-}
-
-.heading-line--download {
-  margin-bottom: 3rem;
-}
-
 .nav {
   width: 100%;
   visibility: hidden;
@@ -181,7 +162,7 @@ header {
   height: 2rem;
   margin-right: 0.5rem;
   border-radius: 50%;
-  background-color: var(--rojo);
+  background-color: #870000;
   color: rgba(255, 255, 255, 0.55);
   transition: opacity 250ms ease;
   position: absolute;
@@ -225,7 +206,7 @@ header {
 .nav--visible {
   visibility: visible;
   height: auto;
-  background: var(--rojo);
+  background: #870000;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -255,7 +236,8 @@ header {
 
 .nav__link:hover,
 .nav__link:focus {
-  opacity: 0.65;
+  opacity: 0.45;
+  color: #870000;
 }
 
 .containerLogo {
@@ -277,63 +259,6 @@ header {
   color: #000000;
   margin: 0;
   align-self: center;
-}
-
-.nav__link--button {
-  display: none;
-  position: relative;
-  background: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0.93rem 3.3rem 0.93rem 1.2rem;
-  font-weight: 700;
-  border: 0.1rem solid white;
-  border-radius: 50rem;
-  cursor: pointer;
-  z-index: 1;
-  overflow: hidden;
-  transition: all 0.5s;
-}
-
-.nav__link--button span {
-  position: absolute;
-  background-color: #55ae36;
-  width: 2.5rem;
-  height: 2.5rem;
-  top: 50%;
-  right: 5px;
-  transform: translateY(-50%);
-  border-radius: 50%;
-}
-
-.nav__link--button span i {
-  color: white;
-  font-size: 1rem;
-  line-height: 2.5rem;
-}
-
-.nav__link--button:hover {
-  color: white;
-}
-
-.nav__link--button:hover span {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.nav__link--button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0;
-  width: 100%;
-  z-index: -1;
-  border-radius: 0 0 50% 50%;
-  transition: all 0.5s;
-}
-
-.nav__link--button:hover:before {
-  height: 190%;
 }
 
 .containerSlider {
@@ -453,7 +378,7 @@ header {
 
 .promocion {
   text-transform: capitalize;
-  color: var(--rojo);
+  color: #870000;
   font-family: "Raleway", sans-serif;
   font-size: 5vw;
   font-weight: 900;
@@ -473,7 +398,7 @@ header {
 .antes {
   margin-top: 0.5rem;
   font-size: 1.1rem;
-  color: var(--rojo);
+  color: #870000;
 }
 
 .antes span {
@@ -483,12 +408,12 @@ header {
 .ahora {
   margin-top: 0.5rem;
   font-size: 2rem;
-  color: var(--rojo);
+  color: #870000;
   z-index: 50;
 }
 
 .contacto {
-  color: #ffffff;
+  color: #870000;
 }
 
 #panza1 {
@@ -510,11 +435,13 @@ header {
   font-size: 1.4rem;
   font-weight: 100;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .contacto h3 span {
   font-weight: 600;
   font-size: 2rem;
+  color: #ffffff;
 }
 
 .contacto iframe {
@@ -538,7 +465,7 @@ header {
 
 .formulario {
   /*EFECTO VIDRIO DELANTE DE UNA IMAGEN*/
-  background-color: #ffffff10;
+  background-color: #ffffff;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 0 10px silver;
@@ -566,7 +493,7 @@ header {
 
 textarea::placeholder,
 input::placeholder {
-  color: var(--rojo);
+  color: #870000;
 }
 
 #nombre,
@@ -593,7 +520,7 @@ input::placeholder {
 }
 
 #select option:checked {
-  color: var(--rojo);
+  color: #870000;
 }
 
 #textA {
@@ -653,7 +580,7 @@ input::placeholder {
 .whatsapp a {
   display: inline-block;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #870000;
 }
 
 .instagram:hover .fa-instagram {
@@ -765,101 +692,6 @@ input::placeholder {
   }
 }
 /*ESTILO PARA RELLENAS, SECAS, VARIOS Y ABOUT SIN EDITAR NI RESPONSIVE*/
-/* ESTILO PARA WEB "SECAS" */
-.navbar-brand img {
-  max-width: 9vw;
-}
-
-/*
-.row {
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
-}
-
-.containerSecas {
-  background: rgb(255, 85, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 85, 0, 1) 0%,
-    rgba(135, 0, 0, 1) 50%
-  );
-}
-
-.tituloSecas {
-  color: #ffffff;
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-  font-size: 7vw;
-  margin-bottom: 0;
-  align-self: flex-start;
-}
-
-.card {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  cursor: pointer;
-  border: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  align-items: center;
-  max-width: 90%;
-}
-
-.card .card-image img {
-  object-fit: cover;
-}
-
-.card .card-content {
-  position: absolute;
-  bottom: -25rem;
-  color: #870000;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(35px);
-  height: 100%;
-  transition: bottom 0.5s ease-in;
-  box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
-  justify-content: center;
-}*/
-/*
-.card:hover .card-content {
-  bottom: 0;
-}*/
-/*
-.card .card-content h4,
-.card .card-content h5,
-.card .card-content i {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: center;
-  transition: 1.7s;
-  font-weight: 600;
-  opacity: 0;
-  transform: translateY(-3rem);
-  transition-delay: 0.2s;
-  max-width: 90%;
-}
-
-.card .card-content h5 {
-  transition: 0.5s;
-  font-weight: 200;
-  letter-spacing: 2px;
-}*/
-/*
-.card:hover .card-content h4,
-.card:hover .card-content h5,
-.card:hover .card-content i {
-  transform: translateY(1rem);
-  opacity: 1;
-}*/
-.publicidad {
-  color: #ffffff;
-}
-
-.publicidadF {
-  height: 5rem;
-  color: #ffffff;
-}
-
 /* ESTILO PARA WEBS "ABOUT" */
 .sobreNosotros {
   display: flex;
@@ -869,334 +701,7 @@ input::placeholder {
 
 .sobreNosotros h1 {
   font-family: "Raleway", sans-serif;
-  color: var(--rojo);
-}
-
-/*ESTILO PARA RELLENAS*/
-#grillaRellena {
-  width: 95vw;
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  grid-template-columns: 1fr 1fr 0.5fr;
-  grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
-  grid-column-gap: 35px;
-  grid-row-gap: 35px;
-  grid-template-areas: "titulo titulo titulo" "foto1 foto2 publicidad" "foto3 foto4 publicidad" "foto5 foto6 publicidad" "publicidadf publicidadf publicidadf";
-}
-
-#tituloRellenas {
-  grid-area: titulo;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  color: var(--rojo);
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-  font-size: 3vw;
-}
-
-#fotosRellenas1 {
-  grid-area: foto1;
-  margin-left: 5vw;
-}
-
-#fotosRellenas1 img {
-  margin-top: -8vh;
-  width: 500px;
-  height: 300px;
-  box-shadow: 0px 0px 5px 5px silver;
-  cursor: pointer;
-  transition: 0.5s linear;
-}
-
-#fotosRellenas1 img:hover {
-  margin-top: 1vh;
-  z-index: -20;
-}
-
-.contenido1 {
-  position: relative;
-  padding: 5px;
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  z-index: -50;
-  box-shadow: 0px 0px 4px 4px silver;
-  display: flex;
-  flex-flow: column nowrap;
-  text-align: center;
-}
-
-.ravioles {
-  position: absolute;
-  top: 48vh;
-  left: 150px;
-  font-family: "Raleway", sans-serif;
-  font-size: 3vw;
-}
-
-#fotosRellenas2 {
-  grid-area: foto2;
-}
-
-#fotosRellenas2 img {
-  margin-top: 1vh;
-  width: 500px;
-  height: 300px;
-  box-shadow: 0px 0px 5px 5px silver;
-  cursor: pointer;
-  transition: 0.5s linear;
-}
-
-#fotosRellenas2 img:hover {
-  margin-top: -8vh;
-  z-index: -20;
-}
-
-.contenido2 {
-  position: relative;
-  top: 48.5vh;
-  padding: 5px;
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  z-index: -50;
-  box-shadow: 0px 0px 4px 4px silver;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  text-align: center;
-}
-
-.canelones {
-  position: absolute;
-  top: -49vh;
-  left: 150px;
-  font-family: "Raleway", sans-serif;
-  font-size: 43px;
-}
-
-#fotosRellenas3 {
-  grid-area: foto3;
-  margin-top: 10vh;
-  margin-left: 5vw;
-}
-
-#fotosRellenas3 img {
-  margin-top: -10vh;
-  width: 500px;
-  height: 300px;
-  box-shadow: 0px 0px 5px 5px silver;
-  cursor: pointer;
-  transition: 0.5s linear;
-}
-
-#fotosRellenas3 img:hover {
-  margin-top: 1vh;
-  z-index: -20;
-}
-
-.contenido3 {
-  position: relative;
-  padding: 5px;
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  z-index: -50;
-  box-shadow: 0px 0px 4px 4px silver;
-  display: flex;
-  flex-flow: column nowrap;
-  text-align: center;
-}
-
-.agnolottis {
-  position: absolute;
-  top: 47vh;
-  left: 10vw;
-  font-family: "Raleway", sans-serif;
-  font-size: 43px;
-}
-
-#fotosRellenas4 {
-  grid-area: foto4;
-  margin-top: 10vh;
-}
-
-#foto4 {
-  width: 500px;
-  height: 300px;
-  box-shadow: 0px 0px 5px 5px silver;
-  cursor: pointer;
-  transition: 0.5s linear;
-  margin-top: 1vh;
-}
-
-#foto4:hover {
-  margin-top: -10vh;
-  z-index: -20;
-}
-
-.contenido4 {
-  position: relative;
-  top: 46.5vh;
-  padding: 5px;
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  z-index: -50;
-  box-shadow: 0px 0px 4px 4px silver;
-  display: flex;
-  flex-flow: column nowrap;
-  text-align: center;
-}
-
-.sorrentinos {
-  position: absolute;
-  top: -47vh;
-  left: 135px;
-  font-family: "Raleway", sans-serif;
-  font-size: 43px;
-}
-
-#fotosRellenas5 {
-  grid-area: foto5;
-  margin-top: 10vh;
-  margin-left: 5vw;
-}
-
-#fotosRellenas5 img {
-  margin-top: -5px;
-  width: 500px;
-  height: 300px;
-  box-shadow: 0px 0px 5px 5px silver;
-  cursor: pointer;
-  transition: 0.5s linear;
-}
-
-#fotosRellenas5 img:hover {
-  margin-top: 60px;
-  z-index: -20;
-}
-
-.contenido5 {
-  position: relative;
-  top: 8.5vh;
-  padding: 5px;
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  z-index: -50;
-  box-shadow: 0px 0px 4px 4px silver;
-  display: flex;
-  flex-flow: column nowrap;
-  text-align: center;
-}
-
-.tortelletis {
-  position: absolute;
-  top: 48vh;
-  left: 145px;
-  font-family: "Raleway", sans-serif;
-  font-size: 43px;
-}
-
-#fotosRellenas6 {
-  grid-area: foto6;
-  margin-top: 20vh;
-}
-
-#fotosRellenas6 img {
-  width: 500px;
-  height: 300px;
-  box-shadow: 0px 0px 5px 5px silver;
-  cursor: pointer;
-  transition: 0.5s linear;
-}
-
-#fotosRellenas6 img:hover {
-  margin-top: -11vh;
-  z-index: -20;
-}
-
-.contenido6 {
-  position: relative;
-  top: 45.5vh;
-  padding: 5px;
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
-  z-index: -50;
-  box-shadow: 0px 0px 4px 4px silver;
-  display: flex;
-  flex-flow: column nowrap;
-  text-align: center;
-}
-
-.raviolones {
-  position: absolute;
-  top: -50vh;
-  left: 135px;
-  font-family: "Raleway", sans-serif;
-  font-size: 43px;
-}
-
-#publicidadAside {
-  grid-area: publicidad;
-  background-color: var(--rojo);
-  box-shadow: 0px 0px 4px 4px var(--rojo);
-}
-
-#banner1 {
-  position: relative;
-  left: 17px;
-  top: 17px;
-  width: 160px;
-  height: 420px;
-  box-shadow: 0px 0px 4px 4px #f0f0f0;
-}
-
-#banner2 {
-  position: relative;
-  top: 137px;
-  left: 17px;
-  width: 160px;
-  height: 420px;
-  box-shadow: 0px 0px 4px 4px #f0f0f0;
-}
-
-#banner3 {
-  position: relative;
-  top: 254px;
-  left: 17px;
-  width: 160px;
-  height: 420px;
-  box-shadow: 0px 0px 4px 4px #f0f0f0;
-}
-
-#publicidadFooter {
-  grid-area: publicidadf;
-  position: relative;
-  top: -0.5vh;
-  background-color: var(--rojo);
-  box-shadow: 0px 0px 4px 4px var(--rojo);
-  max-width: 100vw;
-  z-index: -5;
-}
-
-#havanna {
-  margin-left: 5rem;
-  width: 16rem;
-  height: 6rem;
-}
-
-#havanna1 {
-  margin-top: -0.8rem;
-  margin-left: 5rem;
-  width: 20rem;
-  height: 7rem;
-}
-
-#havanna2 {
-  margin-top: -0.8rem;
-  margin-left: 5rem;
-  width: 18rem;
-  height: 6rem;
+  color: #870000;
 }
 
 /*CSS PARA VARIOS*/
@@ -1343,7 +848,7 @@ input::placeholder {
   }
 
   .instagram a,
-  .whatsapp a {
+.whatsapp a {
     font-size: 1rem;
   }
 
@@ -1355,8 +860,8 @@ input::placeholder {
   }
 
   .card .card-content h4,
-  .card .card-content h5,
-  .card .card-content i {
+.card .card-content h5,
+.card .card-content i {
     font-size: 1rem;
   }
 }
@@ -1366,7 +871,7 @@ input::placeholder {
   }
 
   .nav__link {
-    color: var(--rojo);
+    color: #870000;
   }
 
   .row {
@@ -1462,8 +967,8 @@ input::placeholder {
   }
 
   .card .card-content h4,
-  .card .card-content h5,
-  .card .card-content i {
+.card .card-content h5,
+.card .card-content i {
     font-size: 0.75rem;
   }
 }
@@ -1534,6 +1039,7 @@ input::placeholder {
 
   .direccion h3 {
     font-size: 2rem;
+    color: #ffffff;
   }
 
   .contacto iframe {
@@ -1557,7 +1063,7 @@ input::placeholder {
   }
 
   #nombre,
-  #correo {
+#correo {
     margin-left: 2.5rem;
   }
 
@@ -1584,7 +1090,7 @@ input::placeholder {
   }
 
   .instagram a,
-  .whatsapp a {
+.whatsapp a {
     font-size: 1.5rem;
   }
 
@@ -1600,8 +1106,8 @@ input::placeholder {
   }
 
   .card .card-content h4,
-  .card .card-content h5,
-  .card .card-content i {
+.card .card-content h5,
+.card .card-content i {
     font-size: 0.9rem;
   }
 }
