@@ -393,6 +393,27 @@ svg {
     height: 22rem;
   }
 }
+.containerVarios .card h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #000000;
+  -webkit-text-stroke: 1px #ffffff;
+}
+.containerVarios .card i {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  -webkit-text-fill-color: #000000;
+  text-shadow: -2px -2px 0px #fff, 2px -2px 0px #fff, -2px 2px 0px #fff, 2px 2px 0px #fff;
+}
+.containerVarios .card h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  text-shadow: -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff, 1px 1px 0px #fff;
+}
 .containerVarios .publicidad {
   display: flex;
   flex-direction: row;
