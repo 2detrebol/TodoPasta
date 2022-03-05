@@ -1,19 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
-}
-
-.row {
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
-}
-
 .navbar-brand img {
   max-width: 8vw;
 }
@@ -25,6 +11,7 @@
 .containerSecas .row {
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
+  overflow-x: hidden;
 }
 .containerSecas .tituloSecas {
   color: #ffffff;
@@ -89,6 +76,45 @@
   font-weight: 200;
   letter-spacing: 2px;
 }
+.containerSecas .publicidad {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  animation: flash 9s linear;
+  animation-iteration-count: infinite;
+}
+.containerSecas .publicidadF {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-right: 6.5rem;
+  padding-left: 3.5rem;
+  animation: flash 9s linear;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 1024px) {
+  .containerSecas .publicidad {
+    flex-direction: column;
+  }
+  .containerSecas .publicidad .publicidad {
+    padding-bottom: 8rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.row {
+  margin: 0;
+}
 
 :root {
   --rojo: #870000;
@@ -108,7 +134,8 @@ svg {
 }
 
 .container {
-  max-width: 100vw;
+  width: 100%;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
@@ -123,7 +150,7 @@ header {
 }
 
 .col {
-  max-width: 100vw;
+  width: 100%;
 }
 
 .heading-line::before {
@@ -140,7 +167,7 @@ header {
 }
 
 .nav {
-  width: 100vw;
+  width: 100%;
   visibility: hidden;
   height: 0;
   position: absolute;
@@ -313,7 +340,7 @@ header {
   display: flex;
   justify-content: center;
   align-content: center;
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 .intro-section {
@@ -327,7 +354,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100vw;
+  max-width: 100%;
   margin-top: 1rem;
 }
 
@@ -462,7 +489,6 @@ header {
 
 .contacto {
   color: #ffffff;
-  max-width: 100vw;
 }
 
 #panza1 {
@@ -506,7 +532,7 @@ header {
   margin-top: 2rem;
   text-align: center;
   border-radius: 5px;
-  max-width: 100vw;
+  max-width: 100%;
   padding-bottom: 1rem;
 }
 
@@ -516,7 +542,7 @@ header {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 0 10px silver;
-  max-width: 90vw;
+  max-width: 90%;
 }
 
 .form {
@@ -606,7 +632,7 @@ input::placeholder {
 }
 
 .redes_container {
-  max-width: 90%;
+  width: 100%;
 }
 
 .redes_container ul {
@@ -691,7 +717,7 @@ input::placeholder {
   justify-content: center;
   text-align: center;
   background: #ffffff;
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 #final h5 {
@@ -745,6 +771,11 @@ input::placeholder {
 }
 
 /*
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
 .containerSecas {
   background: rgb(255, 85, 0);
   background: linear-gradient(
@@ -1224,7 +1255,8 @@ input::placeholder {
 
   .leyenda {
     font-size: 8vw;
-    max-width: 95vw;
+    margin-left: -1rem;
+    max-width: 95%;
   }
 
   .promoMes {
@@ -1271,16 +1303,12 @@ input::placeholder {
 
   .direccion {
     margin-top: -3rem;
-    width: 45vw;
+    width: 90vw;
   }
 
   .contacto-form {
     margin-top: -1rem;
-    max-width: 45vw;
-  }
-
-  .formulario {
-    max-width: 45vw;
+    max-width: 100vw;
   }
 
   .form {
@@ -1401,6 +1429,11 @@ input::placeholder {
     height: auto;
   }
 
+  .leyenda {
+    top: -0.7vh;
+    margin-left: 1.2rem;
+  }
+
   .img-slider .navigation .boton {
     width: 1rem;
     height: 1rem;
@@ -1435,17 +1468,19 @@ input::placeholder {
   }
 }
 @media (min-width: 1024px) {
+  .leyenda {
+    margin-top: -0.5rem;
+  }
+
   .nav {
     font-size: 1rem;
     width: 85%;
   }
-  .leyenda {
-    font-size: 5rem;
-  }
+
   .nav__item {
-    width: 7rem;
+    width: 8rem;
     margin: 0 1.5rem 0 1.5rem;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .ContainerCarrousel {
@@ -1571,18 +1606,15 @@ input::placeholder {
   }
 }
 @media (min-width: 1200px) {
-  .containerlLogo {
-    width: 100vw;
-  }
   .nav {
     width: 90%;
   }
 
   .nav__item {
-    width: 11rem;
+    width: 12rem;
     margin: 0 1rem 0 1rem;
-    padding-left: 4.5rem;
-    font-size: 1rem;
+    padding-left: 3.5rem;
+    font-size: 1.2rem;
   }
 
   .ContainerCarrousel {
