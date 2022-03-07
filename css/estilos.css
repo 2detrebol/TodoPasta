@@ -22,6 +22,165 @@ svg {
   vertical-align: middle;
 }
 
+/*Animacion firma Footer*/
+.svg-elem-1 {
+  visibility: hidden;
+  animation: write1 10s infinite linear;
+  animation-fill-mode: forwards;
+}
+
+.svg-elem-2 {
+  visibility: hidden;
+  animation: write2 5s infinite;
+  animation-fill-mode: forwards;
+}
+
+.svg-elem-3 {
+  visibility: hidden;
+  animation: write3 5s infinite;
+}
+
+.svg-elem-4 {
+  visibility: hidden;
+  animation: write4 5s infinite;
+}
+
+.svg-elem-5 {
+  visibility: hidden;
+  animation: write5 5s infinite;
+}
+
+.svg-elem-6 {
+  visibility: hidden;
+  animation: write6 5s infinite;
+}
+
+.svg-elem-7 {
+  visibility: hidden;
+  animation: write7 5s infinite;
+}
+
+.svg-elem-8 {
+  visibility: hidden;
+  animation: write8 5s infinite;
+}
+
+.svg-elem-9 {
+  visibility: hidden;
+  animation: write9 5s infinite;
+}
+
+.svg-elem-10 {
+  visibility: hidden;
+  animation: write10 5s infinite;
+}
+
+.svg-elem-11 {
+  visibility: hidden;
+  animation: write11 5s infinite;
+}
+
+.svg-elem-12 {
+  visibility: hidden;
+  animation: write12 5s infinite;
+}
+
+@keyframes write1 {
+  0%, 2% {
+    visibility: hidden;
+  }
+  8% {
+    visibility: visible;
+  }
+}
+@keyframes write2 {
+  0%, 16% {
+    visibility: hidden;
+  }
+  24% {
+    visibility: visible;
+  }
+}
+@keyframes write3 {
+  0%, 24% {
+    visibility: hidden;
+  }
+  32% {
+    visibility: visible;
+  }
+}
+@keyframes write4 {
+  0%, 32% {
+    visibility: hidden;
+  }
+  40% {
+    visibility: visible;
+  }
+}
+@keyframes write5 {
+  0%, 40% {
+    visibility: hidden;
+  }
+  48% {
+    visibility: visible;
+  }
+}
+@keyframes write6 {
+  0%, 48% {
+    visibility: hidden;
+  }
+  56% {
+    visibility: visible;
+  }
+}
+@keyframes write7 {
+  0%, 56% {
+    visibility: hidden;
+  }
+  64% {
+    visibility: visible;
+  }
+}
+@keyframes write8 {
+  0%, 64% {
+    visibility: hidden;
+  }
+  72% {
+    visibility: visible;
+  }
+}
+@keyframes write9 {
+  0%, 72% {
+    visibility: hidden;
+  }
+  80% {
+    visibility: visible;
+  }
+}
+@keyframes write10 {
+  0%, 80% {
+    visibility: hidden;
+  }
+  88% {
+    visibility: visible;
+  }
+}
+@keyframes write11 {
+  0%, 88% {
+    visibility: hidden;
+  }
+  96% {
+    visibility: visible;
+  }
+}
+@keyframes write12 {
+  0%, 96% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
 .navbar-brand img {
   max-width: 8vw;
 }
