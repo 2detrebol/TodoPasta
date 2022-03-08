@@ -18,16 +18,25 @@ svg {
   vertical-align: middle;
 }
 /*Animacion firma Footer*/
-.svg-elem-1, .svg-elem-2, .svg-elem-3, .svg-elem-4, .svg-elem-5, .svg-elem-6, .svg-elem-7, .svg-elem-8, .svg-elem-9, .svg-elem-10, .svg-elem-11, .svg-elem-12 {
+.svg-elem-2, .svg-elem-3, .svg-elem-4, .svg-elem-5, .svg-elem-6, .svg-elem-7, .svg-elem-8, .svg-elem-9, .svg-elem-10, .svg-elem-11, .svg-elem-12 {
 stroke: #000000;
 stroke-width: 4;
 fill: transparent;
 }
 
-.svg-elem-1 {  
-  stroke-dasharray: 1000px; 
-  stroke-dashoffset: -1000px;
-  animation: M-anim 1s linear 0.5s forwards;    
+[data-aos="M-anim"]  {  
+  stroke: #000000;
+  stroke-width: 4;
+  fill: transparent;
+  &.aos-anime {
+    stroke-dasharray: 1000px; 
+    stroke-dashoffset: -1000px;
+    animation: 1s linear 0.5s forwards;
+    @keyframes M-anim {
+      from {stroke-dashoffset: -1000px}
+      to {stroke-dashoffset: 0px;}  
+      } 
+}
 }
 
 .svg-elem-2 {  
@@ -96,10 +105,7 @@ fill: transparent;
   animation: line-anim 1s linear 11.1s forwards;
 }
 
-@keyframes M-anim {
-  from {stroke-dashoffset: -1000px}
-  to {stroke-dashoffset: 0px;}  
-  }
+
 
 @keyframes a-anim {
   from {stroke-dashoffset: -200px}
