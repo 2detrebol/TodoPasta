@@ -18,185 +18,144 @@ svg {
   vertical-align: middle;
 }
 /*Animacion firma Footer*/
-
-.svg-elem-1 {
-  visibility: hidden;
-  animation: write1 10s infinite linear;
-  animation-fill-mode: forwards;
+.svg-elem-1, .svg-elem-2, .svg-elem-3, .svg-elem-4, .svg-elem-5, .svg-elem-6, .svg-elem-7, .svg-elem-8, .svg-elem-9, .svg-elem-10, .svg-elem-11, .svg-elem-12 {
+stroke: #000000;
+stroke-width: 4;
+fill: transparent;
 }
 
-.svg-elem-2 {
-  visibility: hidden;
-  animation: write2 5s infinite;
-  animation-fill-mode: forwards;
+.svg-elem-1 {  
+  stroke-dasharray: 1000px; 
+  stroke-dashoffset: -1000px;
+  animation: M-anim 1s linear 0.5s forwards;    
 }
 
-.svg-elem-3 {
-  visibility: hidden;
-  animation: write3 5s infinite;
+.svg-elem-2 {  
+  stroke-dasharray: 200px; 
+  stroke-dashoffset: -200px;
+  animation: a-anim 1s linear 1.5s forwards;  
 }
 
-.svg-elem-4 {
-  visibility: hidden;
-  animation: write4 5s infinite;
+.svg-elem-3 {  
+  stroke-dasharray: 200px; 
+  stroke-dashoffset: -200px;
+  animation: u-anim 1s linear 2.5s forwards; 
 }
 
-.svg-elem-5 {
-  visibility: hidden;
-  animation: write5 5s infinite;
+.svg-elem-4 {  
+  stroke-dasharray: 200px; 
+  stroke-dashoffset: -200px;
+  animation: r-anim 1s linear 3.5s forwards; 
 }
 
-.svg-elem-6 {
-  visibility: hidden;
-  animation: write6 5s infinite;
+.svg-elem-5 {  
+  stroke-dasharray: 200px; 
+  stroke-dashoffset: -200px;
+  animation: o-anim 1s linear 4s forwards;
 }
 
-.svg-elem-7 {
-  visibility: hidden;
-  animation: write7 5s infinite;
+.svg-elem-6 {  
+  stroke-dasharray: 900px; 
+  stroke-dashoffset: -900px;
+  animation: B-anim 1.3s linear 5.2s forwards;
 }
 
-.svg-elem-8 {
-  visibility: hidden;
-  animation: write8 5s infinite;
+.svg-elem-7 {  
+  stroke-dasharray: 200px; 
+  stroke-dashoffset: -200px;
+  animation: r2-anim 1s linear 6.5s forwards;
 }
 
-.svg-elem-9 {
-  visibility: hidden;
-  animation: write9 5s infinite;
+.svg-elem-8 {  
+  stroke-dasharray: 200px; 
+  stroke-dashoffset: -200px;
+  animation: a2-anim 1s linear 7.5s forwards;
 }
 
-.svg-elem-10 {
-  visibility: hidden;
-  animation: write10 5s infinite;
+.svg-elem-9 {  
+  stroke-dasharray: 200px; 
+  stroke-dashoffset: -200px;
+  animation: n-anim 1s linear 8.5s forwards;
 }
 
-.svg-elem-11 {
-  visibility: hidden;
-  animation: write11 5s infinite;
+.svg-elem-10 {  
+  stroke-dasharray: 600px; 
+  stroke-dashoffset: -600px;
+  animation: d-anim 1s linear 9s forwards;
 }
 
-.svg-elem-12 {
-  visibility: hidden;
-  animation: write12 5s infinite;
+.svg-elem-11 {  
+  stroke-dasharray: 200px; 
+  stroke-dashoffset: -200px;
+  animation: i-anim 1s linear 9.7s forwards;
 }
 
-@keyframes write1 {
-  0%,
-  2% {
-    visibility: hidden;
-  }
-  8% {
-    visibility: visible;
-  }
+.svg-elem-12 {  
+  stroke-dasharray: 800px; 
+  stroke-dashoffset: -800px;
+  animation: line-anim 1s linear 11.1s forwards;
 }
 
-@keyframes write2 {
-  0%,
-  16% {
-    visibility: hidden;
+@keyframes M-anim {
+  from {stroke-dashoffset: -1000px}
+  to {stroke-dashoffset: 0px;}  
   }
-  24% {
-    visibility: visible;
+
+@keyframes a-anim {
+  from {stroke-dashoffset: -200px}
+  to {stroke-dashoffset: 0px;}  
+    }
+
+@keyframes u-anim {
+  from {stroke-dashoffset: -200px}
+  to {stroke-dashoffset: 0px;}  
   }
+
+@keyframes r-anim {
+  from {stroke-dashoffset: -200px}
+  to {stroke-dashoffset: 0px;}  
+}
+ 
+
+@keyframes o-anim {
+  from {stroke-dashoffset: -200px}
+  to {stroke-dashoffset: 0px;}  
 }
 
-@keyframes write3 {
-  0%,
-  24% {
-    visibility: hidden;
-  }
-  32% {
-    visibility: visible;
-  }
+
+@keyframes B-anim {
+  from {stroke-dashoffset: -900px}
+  to {stroke-dashoffset: 0px;}  
 }
 
-@keyframes write4 {
-  0%,
-  32% {
-    visibility: hidden;
-  }
-  40% {
-    visibility: visible;
-  }
+@keyframes r2-anim {
+  from {stroke-dashoffset: -200px}
+  to {stroke-dashoffset: 0px;}  
 }
 
-@keyframes write5 {
-  0%,
-  40% {
-    visibility: hidden;
-  }
-  48% {
-    visibility: visible;
-  }
+@keyframes a2-anim {
+  from {stroke-dashoffset: -200px}
+  to {stroke-dashoffset: 0px;}  
 }
 
-@keyframes write6 {
-  0%,
-  48% {
-    visibility: hidden;
-  }
-  56% {
-    visibility: visible;
-  }
+@keyframes n-anim {
+  from {stroke-dashoffset: -200px}
+  to {stroke-dashoffset: 0px;}  
 }
 
-@keyframes write7 {
-  0%,
-  56% {
-    visibility: hidden;
-  }
-  64% {
-    visibility: visible;
-  }
+@keyframes d-anim {
+  from {stroke-dashoffset: -600px}
+  to {stroke-dashoffset: 0px;}  
 }
 
-@keyframes write8 {
-  0%,
-  64% {
-    visibility: hidden;
-  }
-  72% {
-    visibility: visible;
-  }
+@keyframes i-anim {
+  from {stroke-dashoffset: -200px}
+  to {stroke-dashoffset: 0px;}  
 }
 
-@keyframes write9 {
-  0%,
-  72% {
-    visibility: hidden;
-  }
-  80% {
-    visibility: visible;
-  }
+@keyframes line-anim {
+  from {stroke-dashoffset: -800px}
+  to {stroke-dashoffset: 0px;}  
 }
 
-@keyframes write10 {
-  0%,
-  80% {
-    visibility: hidden;
-  }
-  88% {
-    visibility: visible;
-  }
-}
 
-@keyframes write11 {
-  0%,
-  88% {
-    visibility: hidden;
-  }
-  96% {
-    visibility: visible;
-  }
-}
-
-@keyframes write12 {
-  0%,
-  96% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
-  }
-}
