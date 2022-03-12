@@ -694,17 +694,18 @@ header {
 
 .logo img {
   max-width: 9vw;
-  margin: 0;
+  margin-right: 1rem;
   padding-top: 0.2rem;
 }
 
 .leyenda {
   font-family: "Waterfall", sans-serif;
-  font-size: 6vw;
+  font-size: 5.5vw;
   letter-spacing: 0.2rem;
   color: #000000;
   margin: 0;
   align-self: center;
+  margin-right: 1rem;
 }
 
 .containerSlider {
@@ -1164,13 +1165,19 @@ input::placeholder {
   }
 
   .nav-toggle {
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 2rem;
+  }
+
+  .logo img {
+    max-width: 8vw;
+    margin-right: 2.5rem;
   }
 
   .leyenda {
-    font-size: 8vw;
-    margin-left: -1rem;
+    font-size: 6vw;
+    margin-right: 2.5rem;
     max-width: 95%;
   }
 
@@ -1321,22 +1328,21 @@ input::placeholder {
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
-    height: auto;
     position: relative;
-    left: 5.5rem;
-    width: 85vw;
+    left: 8rem;
+    width: 80vw;
+    height: 1.5rem;
   }
 
   .nav__list {
     display: flex;
     align-items: center;
-    margin: 0;
     font-size: 0.8rem;
   }
 
   .nav__item {
     margin: 0 1rem 0 1rem;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .containerlLogo {
@@ -1345,7 +1351,7 @@ input::placeholder {
   }
 
   .leyenda {
-    top: -0.7vh;
+    font-size: 4.5vw;
     margin-left: 1.2rem;
   }
 
@@ -1385,17 +1391,23 @@ input::placeholder {
 @media (min-width: 1024px) {
   .leyenda {
     margin-top: -0.5rem;
+    font-size: 4rem;
   }
 
   .nav {
     font-size: 1rem;
     width: 85%;
+    height: 3rem;
   }
 
   .nav__item {
     width: 8rem;
     margin: 0 1.5rem 0 1.5rem;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+  }
+
+  .containerLogo {
+    max-height: 4rem;
   }
 
   .ContainerCarrousel {
@@ -1523,14 +1535,19 @@ input::placeholder {
 }
 @media (min-width: 1200px) {
   .nav {
-    width: 90%;
+    width: 80%;
+    height: 3.5rem;
   }
 
   .nav__item {
-    width: 12rem;
-    margin: 0 1rem 0 1rem;
+    width: 11rem;
+    margin: 0 0.5rem 0 0;
     padding-left: 3.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .containerLogo {
+    margin-left: -4rem;
   }
 
   .ContainerCarrousel {
@@ -1568,12 +1585,12 @@ input::placeholder {
   }
 
   .nav__item {
-    width: 12.5rem;
+    width: 12rem;
     margin: 0 1.5rem 0 1.5rem;
   }
 
   .logo img {
-    max-width: 12vw;
+    max-width: 8vw;
   }
 
   .ContainerCarrousel {
