@@ -1407,14 +1407,10 @@ input::placeholder {
     font-size: 0.7rem;
   }
 
-  .containerlLogo {
-    width: 6rem;
-    height: auto;
-  }
-
   .leyenda {
     font-size: 4.5vw;
     margin-left: 1.2rem;
+    font-weight: 900;
   }
 
   .img-slider .navigation .boton {
@@ -1685,6 +1681,11 @@ input::placeholder {
 }
 
 @media (min-width: 1600px) {
+  .nav {
+    width: 75%;
+    height: 5rem;
+  }
+
   .logo img {
     max-width: 6.5vw;
   }
@@ -1695,22 +1696,32 @@ input::placeholder {
 }
 
 @media (min-width: 1900px) {
-  .container {
-    max-width: 1900px;
+  .containerLogo {
+    width: 80vw;
+    position: relative;
+    left: -10rem;
+    margin-top: 1rem;
   }
 
-  .containerLogo {
-    margin-left: -10rem;
+  .logo {
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  .leyenda {
+    font-size: 5rem;
+    font-weight: 900;
   }
 
   .nav__list--primary {
     width: 100vw;
     position: relative;
-    left: 12rem;
+    left: 3rem;
   }
 
   .nav__item {
-    margin-top: 5rem;
+    margin-top: 0.5rem;
     margin-left: 4rem;
     margin-right: 4rem;
     font-size: 1.4rem;
