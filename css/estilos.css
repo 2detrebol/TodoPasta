@@ -188,10 +188,16 @@ path.svg-elem-12 {
 .containerSecas .card .card-image .card-image img {
   object-fit: cover;
 }
-.containerSecas .card:hover .card-content, .containerSecas .card:focus .card-content {
+.containerSecas .card:hover .card-content,
+.containerSecas .card:focus .card-content {
   bottom: 0;
 }
-.containerSecas .card:hover .card-content h4, .containerSecas .card:hover .card-content h5, .containerSecas .card:hover .card-content i, .containerSecas .card:focus .card-content h4, .containerSecas .card:focus .card-content h5, .containerSecas .card:focus .card-content i {
+.containerSecas .card:hover .card-content h4,
+.containerSecas .card:hover .card-content h5,
+.containerSecas .card:hover .card-content i,
+.containerSecas .card:focus .card-content h4,
+.containerSecas .card:focus .card-content h5,
+.containerSecas .card:focus .card-content i {
   transform: translateY(1rem);
   opacity: 1;
 }
@@ -535,14 +541,16 @@ path.svg-elem-12 {
   font-weight: 600;
   font-size: 1.8rem;
   -webkit-text-fill-color: #000000;
-  text-shadow: -2px -2px 0px #fff, 2px -2px 0px #fff, -2px 2px 0px #fff, 2px 2px 0px #fff;
+  text-shadow: -2px -2px 0px #fff, 2px -2px 0px #fff, -2px 2px 0px #fff,
+    2px 2px 0px #fff;
 }
 .containerVarios .card h5 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: #000000;
-  text-shadow: -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff, 1px 1px 0px #fff;
+  text-shadow: -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff,
+    1px 1px 0px #fff;
 }
 .containerVarios .publicidad {
   display: flex;
@@ -1319,7 +1327,7 @@ input::placeholder {
   }
 
   .instagram a,
-.whatsapp a {
+  .whatsapp a {
     font-size: 1rem;
   }
 
@@ -1331,8 +1339,8 @@ input::placeholder {
   }
 
   .card .card-content h4,
-.card .card-content h5,
-.card .card-content i {
+  .card .card-content h5,
+  .card .card-content i {
     font-size: 1rem;
   }
 }
@@ -1437,8 +1445,8 @@ input::placeholder {
   }
 
   .card .card-content h4,
-.card .card-content h5,
-.card .card-content i {
+  .card .card-content h5,
+  .card .card-content i {
     font-size: 0.75rem;
   }
 }
@@ -1539,7 +1547,7 @@ input::placeholder {
   }
 
   #nombre,
-#correo {
+  #correo {
     margin-left: 2.5rem;
   }
 
@@ -1566,7 +1574,7 @@ input::placeholder {
   }
 
   .instagram a,
-.whatsapp a {
+  .whatsapp a {
     font-size: 1.5rem;
   }
 
@@ -1582,8 +1590,8 @@ input::placeholder {
   }
 
   .card .card-content h4,
-.card .card-content h5,
-.card .card-content i {
+  .card .card-content h5,
+  .card .card-content i {
     font-size: 0.9rem;
   }
 }
@@ -1674,6 +1682,12 @@ input::placeholder {
 .card .card-content h5,
 .card .card-content i {
   font-size: 1.2rem;
+}
+
+@media (min-width: 1600px) {
+  .logo img {
+    max-width: 6.5vw;
+  }
 }
 
 @media (min-width: 1900px) {
