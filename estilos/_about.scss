@@ -1,0 +1,66 @@
+.containerAbout {
+  background: rgb(255, 85, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 85, 0, 1) 0%,
+    rgba(135, 0, 0, 1) 50%
+  );
+  .row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    overflow-x: hidden;
+    align-items: flex-start;
+  }
+}
+.tituloAbout {
+  color: $colorBlanco;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 5vw;
+  margin-bottom: 0;
+  align-self: flex-start;
+}
+
+.sobreNosotros {
+  max-width: 70%;
+}
+
+.textoNosotros {
+  color: $colorBlanco;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 3vw;
+  max-width: 80%;
+}
+.publicidad {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 0.5rem 0 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  animation: flash 9s linear;
+  animation-iteration-count: infinite;
+}
+
+.publicidadF {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 6.5rem 0 3.5rem;
+  margin-bottom: 1rem;
+  animation: flash 7s linear;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 1024px) {
+  .containerAbout .publicidad {
+    flex-direction: column;
+    .publicidad {
+      padding-bottom: 0.5rem;
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+}

@@ -30,6 +30,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!--AOS ANIMACIONES SCROLL-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--FAVICON-->
     <link rel="shortcut icon" href="imagenes/dibu.png" type="image/x-icon" />
     <title>TODO PASTA - SOBRE NOSOTROS</title>
@@ -81,8 +83,63 @@
       <!--NAV BAR-->
     </header>
 
-    <main class="sobreNosotros">
-      <h1>SOBRE NOSOTROS</h1>
+    <main>
+      <div class="container-fluid p-0 containerAbout">
+        <div class="row">
+          <div
+            class="row col-md-12 col-lg-10 d-flex flex-wrap justify-content-evenly mb-4"
+          >
+            <h1
+              data-aos="fade-down"
+              data-aos-duration="500"
+              data-aos-offset="110"
+              class="text-center tituloAbout pt-4 pb-4"
+            >
+              SOBRE NOSOTROS
+            </h1>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="600"
+              class="card col-12 col-lg-10 mb-4 sobreNosotros"
+            >
+              <div class="fotoNosotros">
+                <img src="imagenes/nosotros.jpg" alt="quienes somos" />
+              </div>
+            </div>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="600"
+              class="card-content col-12 col-lg-10 mb-4 d-flex flex-column align-items-center justify-content-center textoNosotros"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+                facilis corrupti distinctio sint. Tempore unde vel voluptatibus,
+                delectus vero fugiat nesciunt doloremque, numquam tenetur
+                accusantium cupiditate, corrupti explicabo sapiente eius?
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-2 publicidad">
+            <div class="publicidad publicidad__espresso">
+              <img src="imagenes/banner1.jpg" alt="Publicidad Espresso" />
+            </div>
+            <div class="publicidad publicidad__latte">
+              <img src="imagenes/banner2.jpg" alt="Publicidad Latte" />
+            </div>
+            <div class="publicidad publicidad__matcha">
+              <img src="imagenes/banner3.jpg" alt="Publicidad Matcha" />
+            </div>
+          </div>
+          <div class="col-12 publicidadF">
+            <div class="publicidadF publicidadF__havanna1">
+              <img src="imagenes/havanna1.png" alt="Publicidad Havanna 1" />
+            </div>
+            <div class="publicidadF publicidad__havanna">
+              <img src="imagenes/havanna.png" alt="Publicidad Havanna" />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!--FOOTER-->
@@ -173,7 +230,13 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/firma.js"></script>
     <script src="js/slider.js"></script>
+
+    <!-- Bootstrap en carpeta de JS fuera de CDN -->
+    <script src="js/bootstrap.js"></script>
+    <!-- AOS ANIMACIONES JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/firma.js"></script>
   </body>
 </html>

@@ -574,6 +574,70 @@ path.svg-elem-12 {
     padding-top: 1rem;
   }
 }
+.containerAbout {
+  background: #ff5500;
+  background: linear-gradient(90deg, #ff5500 0%, #870000 50%);
+}
+.containerAbout .row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  overflow-x: hidden;
+  align-items: flex-start;
+}
+
+.tituloAbout {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 5vw;
+  margin-bottom: 0;
+  align-self: flex-start;
+}
+
+.sobreNosotros {
+  max-width: 70%;
+}
+
+.textoNosotros {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 3vw;
+  max-width: 80%;
+}
+
+.publicidad {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 0.5rem 0 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  animation: flash 9s linear;
+  animation-iteration-count: infinite;
+}
+
+.publicidadF {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 6.5rem 0 3.5rem;
+  margin-bottom: 1rem;
+  animation: flash 7s linear;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 1024px) {
+  .containerAbout .publicidad {
+    flex-direction: column;
+  }
+  .containerAbout .publicidad .publicidad {
+    padding-bottom: 0.5rem;
+  }
+  .containerAbout .publicidad .publicidad img {
+    max-width: 80%;
+  }
+}
 .container {
   width: 100%;
   max-width: 1320px;
@@ -1139,19 +1203,6 @@ input::placeholder {
     transform: rotate(360deg);
   }
 }
-/*ESTILO PARA RELLENAS, SECAS, VARIOS Y ABOUT SIN EDITAR NI RESPONSIVE*/
-/* ESTILO PARA WEBS "ABOUT" */
-.sobreNosotros {
-  display: flex;
-  justify-content: center;
-  height: 20rem;
-}
-
-.sobreNosotros h1 {
-  font-family: "Raleway", sans-serif;
-  color: #870000;
-}
-
 /*MEDIA QUERIES*/
 @media (min-width: 576px) {
   .ContainerCarrousel {

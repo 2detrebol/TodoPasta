@@ -3,6 +3,7 @@
 @import "variables";
 @import "secas-rellenas";
 @import "varios";
+@import "about";
 
 .container {
   width: 100%;
@@ -578,21 +579,6 @@ input::placeholder {
   100% {
     transform: rotate(360deg);
   }
-}
-
-/*ESTILO PARA RELLENAS, SECAS, VARIOS Y ABOUT SIN EDITAR NI RESPONSIVE*/
-
-/* ESTILO PARA WEBS "ABOUT" */
-
-.sobreNosotros {
-  display: flex;
-  justify-content: center;
-  height: 20rem;
-}
-
-.sobreNosotros h1 {
-  font-family: "Raleway", sans-serif;
-  color: $colorRojo;
 }
 
 /*MEDIA QUERIES*/
