@@ -1688,6 +1688,10 @@ input::placeholder {
   .logo img {
     max-width: 6.5vw;
   }
+
+  .sobreNosotros {
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 1900px) {
