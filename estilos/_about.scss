@@ -33,9 +33,9 @@
   color: $colorBlanco;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 3vw;
-  max-width: 80%;
-  text-align: justify;
+  font-size: 2.6vw;
+  max-width: 90%;
+  text-align: center;
 }
 .publicidad {
   display: flex;
@@ -63,9 +63,6 @@
     flex-direction: column;
     .publicidad {
       padding-bottom: 0.5rem;
-      img {
-        max-width: 80%;
-      }
     }
   }
 }
