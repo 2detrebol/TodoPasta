@@ -678,13 +678,13 @@ header {
 
 .nav-toggle {
   cursor: pointer;
-  border: 2px solid #333333;
+  border: 3px double #ff5500;
   width: 2rem;
   height: 2rem;
   margin-right: 0.5rem;
   border-radius: 50%;
-  background-color: #870000;
-  color: rgba(255, 255, 255, 0.55);
+  background-color: #333333;
+  color: #ff5500;
   transition: opacity 250ms ease;
   position: absolute;
   right: 0;
@@ -708,6 +708,8 @@ header {
   margin: 0 auto;
   height: 3px;
   background: #ffffff;
+  border-radius: 15px;
+  outline: 0.5px solid #ff5500;
 }
 
 .hamburger::before,
@@ -940,7 +942,6 @@ header {
 
 #panza1 {
   max-width: 100vw;
-  margin-top: -2.5rem;
 }
 
 .direccion {
@@ -1350,7 +1351,7 @@ input::placeholder {
   }
 
   .nav__link {
-    color: #870000;
+    color: #ff5500;
   }
 
   .row {
