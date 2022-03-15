@@ -57,7 +57,7 @@ header {
   cursor: pointer;
   border: 3.5px double $colorNaranja;
   width: 10vw;
-  height: 6vh;
+  height: 5.5vh;
   border-radius: 50%;
   background-color: $colorGris;
   transition: opacity 250ms ease;
@@ -342,59 +342,54 @@ path.svg-elem-12 {
   .containerLogo {
     max-width: 10vw;
     .logo img {
-      max-width: 10vw;
+      max-width: 7vw;
     }
-  }
-
-  .botonToggle {
-    visibility: hidden;
-    height: 0;
-    width: 0;
-    display: none;
   }
 
   .nav {
     visibility: visible;
     position: relative;
     height: auto;
-    width: 100vw;
-  }
-
-  .nav__list--primary .nav__item .nav__link {
-    color: $colorNaranja;
-    text-align: center;
-    margin: 0;
-  }
-
-  .nav__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-    height: auto;
-  }
-
-  .nav__item {
-    margin: 0 1.5rem 0 1.5rem;
-  }
-
-  .nav__link {
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    &:hover,
-    &:focus {
-      color: $colorGris;
-      outline: 2px solid $colorGris;
-      padding: 0 1rem 0 1rem;
+    width: 100%;
+    .nav__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      text-align: center;
+      align-items: center;
+      list-style: none;
+      height: auto;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 0.5rem;
+      .nav__item {
+        width: 6.5rem;
+        line-height: 0.5cm;
+        .nav__link {
+          font-size: 1rem;
+          text-transform: uppercase;
+          color: $colorNaranja;
+          text-shadow: 0 1px 0 $colorBlanco, 0 2px 0 $colorPastel,
+            0 3px 0 $colorPastel, 0 4px 0 $colorPastel;
+          &:hover,
+          &:focus {
+            color: $colorGris;
+            outline: none;
+            padding: 0;
+            opacity: 0.5;
+          }
+        }
+      }
     }
   }
 
   .leyenda {
-    font-size: 3rem;
-    width: 100%;
+    font-size: 2.5rem;
     height: auto;
+    text-shadow: 1px 1px $colorNegro, 2px 2px $colorPastel,
+      3px 3px $colorNaranja, 4px 4px $colorNaranja, 5px 5px $colorNaranja,
+      10px 10px 30px $colorNegro;
   }
 }
 /*

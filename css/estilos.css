@@ -60,7 +60,7 @@ header {
   cursor: pointer;
   border: 3.5px double #ff5500;
   width: 10vw;
-  height: 6vh;
+  height: 5.5vh;
   border-radius: 50%;
   background-color: #333333;
   transition: opacity 250ms ease;
@@ -341,57 +341,49 @@ path.svg-elem-12 {
     max-width: 10vw;
   }
   .containerLogo .logo img {
-    max-width: 10vw;
-  }
-
-  .botonToggle {
-    visibility: hidden;
-    height: 0;
-    width: 0;
-    display: none;
+    max-width: 7vw;
   }
 
   .nav {
     visibility: visible;
     position: relative;
     height: auto;
-    width: 100vw;
+    width: 100%;
   }
-
-  .nav__list--primary .nav__item .nav__link {
-    color: #ff5500;
-    text-align: center;
-    margin: 0;
-  }
-
-  .nav__list {
+  .nav .nav__list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    text-align: center;
     align-items: center;
     list-style: none;
     height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.5rem;
   }
-
-  .nav__item {
-    margin: 0 1.5rem 0 1.5rem;
+  .nav .nav__list .nav__item {
+    width: 6.5rem;
+    line-height: 0.5cm;
   }
-
-  .nav__link {
+  .nav .nav__list .nav__item .nav__link {
     font-size: 1rem;
     text-transform: uppercase;
-    font-weight: 400;
+    color: #ff5500;
+    text-shadow: 0 1px 0 #ffffff, 0 2px 0 #e9cdc0, 0 3px 0 #e9cdc0, 0 4px 0 #e9cdc0;
   }
-  .nav__link:hover, .nav__link:focus {
+  .nav .nav__list .nav__item .nav__link:hover, .nav .nav__list .nav__item .nav__link:focus {
     color: #333333;
-    outline: 2px solid #333333;
-    padding: 0 1rem 0 1rem;
+    outline: none;
+    padding: 0;
+    opacity: 0.5;
   }
 
   .leyenda {
-    font-size: 3rem;
-    width: 100%;
+    font-size: 2.5rem;
     height: auto;
+    text-shadow: 1px 1px #000000, 2px 2px #e9cdc0, 3px 3px #ff5500, 4px 4px #ff5500, 5px 5px #ff5500, 10px 10px 30px #000000;
   }
 }
 /*
@@ -1371,7 +1363,6 @@ input::placeholder {
   }
 }
 /*OLAS DEL FOOTER*/
-/*
 @keyframes wave {
   0% {
     transform: rotate(0deg);
@@ -1380,7 +1371,6 @@ input::placeholder {
     transform: rotate(360deg);
   }
 }
-*/
 /*MEDIA QUERIES*/
 @media (min-width: 576px) {
   .ContainerCarrousel {
@@ -1498,11 +1488,6 @@ input::placeholder {
 @media (min-width: 768px) {
   .container {
     width: 100vw;
-  }
-
-  .row {
-    display: flex;
-    align-items: center;
   }
 
   .ContainerCarrousel {
