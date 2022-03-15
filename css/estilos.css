@@ -48,7 +48,7 @@ header {
 
 .leyenda {
   font-family: "Waterfall", sans-serif;
-  font-size: 5.5vw;
+  font-size: 5vw;
   font-weight: 900;
   letter-spacing: 0.2rem;
   color: #000000;
@@ -59,7 +59,7 @@ header {
 .nav-toggle {
   cursor: pointer;
   border: 3.5px double #ff5500;
-  width: 11vw;
+  width: 10vw;
   height: 6vh;
   border-radius: 50%;
   background-color: #333333;
@@ -143,6 +143,7 @@ header {
 .nav__list--primary .nav__item .nav__link:hover, .nav__list--primary .nav__item .nav__link:focus {
   color: #333333;
   outline: 2px solid #333333;
+  border-radius: 25px;
   padding: 0 1rem 0 1rem;
 }
 
@@ -277,16 +278,30 @@ path.svg-elem-12 {
 
 @media (min-width: 576px) {
   .containerLogo .logo img {
-    max-width: 5vw;
+    max-width: 4vw;
   }
 
   .leyenda {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 
   .nav-toggle {
-    height: 1.9rem;
-    width: 5vw;
+    height: 1.5rem;
+    width: 1.6rem;
+  }
+
+  .hamburger,
+.hamburger::before,
+.hamburger::after {
+    height: 1px;
+  }
+
+  .hamburger::before {
+    transform: translateY(-4px);
+  }
+
+  .hamburger::after {
+    transform: translateY(3px);
   }
 }
 @media (min-width: 768px) {
@@ -306,6 +321,20 @@ path.svg-elem-12 {
     height: 6.3vh;
     width: 8vw;
   }
+
+  .hamburger,
+.hamburger::before,
+.hamburger::after {
+    height: 3px;
+  }
+
+  .hamburger::before {
+    transform: translateY(-10px);
+  }
+
+  .hamburger::after {
+    transform: translateY(7px);
+  }
 }
 @media (min-width: 1024px) {
   .containerLogo {
@@ -315,53 +344,57 @@ path.svg-elem-12 {
     max-width: 10vw;
   }
 
-  .nav-toggle {
+  .botonToggle {
     visibility: hidden;
-    display: none;
     height: 0;
+    width: 0;
+    display: none;
   }
 
   .nav {
     visibility: visible;
     position: relative;
-    height: 3rem;
-    width: 100%;
+    height: auto;
+    width: 100vw;
+  }
+
+  .nav__list--primary .nav__item .nav__link {
+    color: #ff5500;
+    text-align: center;
+    margin: 0;
   }
 
   .nav__list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     list-style: none;
     height: auto;
   }
-  .nav__list .nav__list--primary {
-    text-align: center;
-  }
-  .nav__list .nav__list--primary .nav__item {
-    font-size: 1.3rem;
+
+  .nav__item {
     margin: 0 1.5rem 0 1.5rem;
-    color: #ff5500;
   }
-  .nav__list .nav__list--primary .nav__item .nav__link {
-    color: #ff5500;
+
+  .nav__link {
+    font-size: 1rem;
     text-transform: uppercase;
-    font-weight: 600;
-    text-decoration: none;
-    vertical-align: middle;
+    font-weight: 400;
   }
-  .nav__list .nav__list--primary .nav__item .nav__link:hover, .nav__list .nav__list--primary .nav__item .nav__link:focus {
+  .nav__link:hover, .nav__link:focus {
     color: #333333;
     outline: 2px solid #333333;
     padding: 0 1rem 0 1rem;
   }
 
   .leyenda {
-    font-size: 4rem;
+    font-size: 3rem;
     width: 100%;
     height: auto;
   }
 }
+/*
 @media (min-width: 1200px) {
   .nav {
     width: 80%;
@@ -374,11 +407,11 @@ path.svg-elem-12 {
     padding-left: 3.5rem;
     font-size: 1rem;
   }
-
   .containerLogo {
     margin-left: -4rem;
   }
 }
+
 @media (min-width: 1400px) {
   .containerLogo {
     margin-left: -4rem;
@@ -405,6 +438,7 @@ path.svg-elem-12 {
     max-width: 8vw;
   }
 }
+
 @media (min-width: 1900px) {
   .containerLogo {
     margin-left: -10rem;
@@ -415,7 +449,6 @@ path.svg-elem-12 {
     position: relative;
     left: 12rem;
   }
-
   .nav__item {
     margin-top: 5rem;
     margin-left: 4rem;
@@ -424,6 +457,7 @@ path.svg-elem-12 {
     width: fit-content;
   }
 }
+*/
 .containerSecas {
   background: #ff5500;
   background: linear-gradient(90deg, #ff5500 0%, #870000 50%);
