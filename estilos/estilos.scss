@@ -430,6 +430,7 @@ input::placeholder {
 }
 
 /*ANIMACION APARECER DESDE LA IZQUIERDA*/
+
 @keyframes from-left {
   0% {
     opacity: 0;
@@ -442,7 +443,7 @@ input::placeholder {
 }
 
 /*OLAS DEL FOOTER*/
-
+/*
 @keyframes wave {
   0% {
     transform: rotate(0deg);
@@ -451,7 +452,7 @@ input::placeholder {
     transform: rotate(360deg);
   }
 }
-
+*/
 /*MEDIA QUERIES*/
 
 @media (min-width: 576px) {
@@ -464,22 +465,6 @@ input::placeholder {
     height: 16rem;
     width: 65%;
     object-fit: cover;
-  }
-
-  .nav-toggle {
-    height: 2.5rem;
-    width: 2.5rem;
-    margin-right: 2rem;
-  }
-  .logo img {
-    max-width: 8vw;
-    margin-right: 2.5rem;
-  }
-
-  .leyenda {
-    font-size: 6vw;
-    margin-right: 2.5rem;
-    max-width: 95%;
   }
 
   .promoMes {
@@ -589,10 +574,6 @@ input::placeholder {
     width: 100vw;
   }
 
-  .nav__link {
-    color: $colorRojo;
-  }
-
   .row {
     display: flex;
     align-items: center;
@@ -619,40 +600,6 @@ input::placeholder {
 
   #panza {
     width: 100vw;
-  }
-
-  .nav-toggle {
-    display: none;
-  }
-  .nav {
-    visibility: visible;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    position: relative;
-    left: 8rem;
-    width: 80vw;
-    height: 1.5rem;
-  }
-
-  .nav__list {
-    display: flex;
-    align-items: center;
-    font-size: 0.8rem;
-  }
-
-  .nav__item {
-    margin: 0 1rem 0 1rem;
-    font-size: 0.7rem;
-  }
-
-  .containerlLogo {
-    width: 6rem;
-    height: auto;
-  }
-  .leyenda {
-    font-size: 4.5vw;
-    margin-left: 1.2rem;
   }
 
   .img-slider .navigation .boton {
@@ -690,27 +637,6 @@ input::placeholder {
 }
 
 @media (min-width: 1024px) {
-  .leyenda {
-    margin-top: -0.5rem;
-    font-size: 4rem;
-  }
-
-  .nav {
-    font-size: 1rem;
-    width: 85%;
-    height: 3rem;
-  }
-
-  .nav__item {
-    width: 8rem;
-    margin: 0 1.5rem 0 1.5rem;
-    font-size: 0.9rem;
-  }
-
-  .containerLogo {
-    max-height: 4rem;
-  }
-
   .ContainerCarrousel {
     height: 32rem;
     margin-top: 0;
@@ -733,10 +659,6 @@ input::placeholder {
   .promo_img img {
     width: 19.5rem;
     margin-left: 2.5rem;
-  }
-
-  .nav__link--button {
-    display: block;
   }
 
   .oferta {
@@ -835,21 +757,6 @@ input::placeholder {
   }
 }
 @media (min-width: 1200px) {
-  .nav {
-    width: 80%;
-    height: 3.5rem;
-  }
-
-  .nav__item {
-    width: 11rem;
-    margin: 0 0.5rem 0 0;
-    padding-left: 3.5rem;
-    font-size: 1rem;
-  }
-  .containerLogo {
-    margin-left: -4rem;
-  }
-
   .ContainerCarrousel {
     height: 30rem;
   }
@@ -868,31 +775,6 @@ input::placeholder {
 }
 
 @media (min-width: 1400px) {
-  .containerLogo {
-    margin-left: -4rem;
-  }
-
-  .leyenda {
-    margin-left: 5rem;
-  }
-
-  .nav {
-    width: 90%;
-  }
-
-  .nav__list {
-    padding-left: 4rem;
-  }
-
-  .nav__item {
-    width: 12rem;
-    margin: 0 1.5rem 0 1.5rem;
-  }
-
-  .logo img {
-    max-width: 8vw;
-  }
-
   .ContainerCarrousel {
     height: 29rem;
     margin-top: 10rem;
@@ -925,23 +807,6 @@ input::placeholder {
 @media (min-width: 1900px) {
   .container {
     max-width: 1900px;
-  }
-
-  .containerLogo {
-    margin-left: -10rem;
-  }
-
-  .nav__list--primary {
-    width: 100vw;
-    position: relative;
-    left: 12rem;
-  }
-  .nav__item {
-    margin-top: 5rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    font-size: 1.4rem;
-    width: fit-content;
   }
 
   .ContainerCarrousel {
