@@ -48,19 +48,20 @@ header {
 
 .leyenda {
   font-family: "Waterfall", sans-serif;
-  font-size: 5vw;
+  font-size: 5.5vw;
   font-weight: 900;
   letter-spacing: 0.2rem;
   color: #000000;
   margin: 0;
   text-align: center;
+  text-shadow: 1px 1px #e9cdc0, 2px 2px #e9cdc0, 3px 3px #ff5500, 4px 4px #ff5500, 10px 10px 30px #000000;
 }
 
 .nav-toggle {
   cursor: pointer;
   border: 3.5px double #ff5500;
-  width: 10vw;
-  height: 5.5vh;
+  width: 2.7rem;
+  height: 2.6rem;
   border-radius: 50%;
   background-color: #333333;
   transition: opacity 250ms ease;
@@ -278,16 +279,17 @@ path.svg-elem-12 {
 
 @media (min-width: 576px) {
   .containerLogo .logo img {
-    max-width: 4vw;
+    max-width: 5.5vw;
   }
 
   .leyenda {
-    font-size: 3vw;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
   }
 
   .nav-toggle {
-    height: 1.5rem;
-    width: 1.6rem;
+    height: 2rem;
+    width: 1.9rem;
   }
 
   .hamburger,
@@ -310,7 +312,7 @@ path.svg-elem-12 {
   }
 
   .leyenda {
-    font-size: 7vw;
+    font-size: 2.9rem;
   }
 
   .nav__link {
@@ -318,8 +320,8 @@ path.svg-elem-12 {
   }
 
   .nav-toggle {
-    height: 6.3vh;
-    width: 8vw;
+    height: 3.9rem;
+    width: 4rem;
   }
 
   .hamburger,
@@ -341,7 +343,7 @@ path.svg-elem-12 {
     max-width: 10vw;
   }
   .containerLogo .logo img {
-    max-width: 7vw;
+    max-width: 9vw;
   }
 
   .nav {
@@ -383,73 +385,37 @@ path.svg-elem-12 {
   .leyenda {
     font-size: 2.5rem;
     height: auto;
-    text-shadow: 1px 1px #000000, 2px 2px #e9cdc0, 3px 3px #ff5500, 4px 4px #ff5500, 5px 5px #ff5500, 10px 10px 30px #000000;
+    letter-spacing: 0.4rem;
+    margin-bottom: 1rem;
   }
 }
-/*
 @media (min-width: 1200px) {
-  .nav {
-    width: 80%;
-    height: 3.5rem;
-  }
-
-  .nav__item {
-    width: 11rem;
-    margin: 0 0.5rem 0 0;
-    padding-left: 3.5rem;
-    font-size: 1rem;
-  }
-  .containerLogo {
-    margin-left: -4rem;
-  }
-}
-
-@media (min-width: 1400px) {
-  .containerLogo {
-    margin-left: -4rem;
-  }
-
   .leyenda {
-    margin-left: 5rem;
-  }
-
-  .nav {
-    width: 90%;
-  }
-
-  .nav__list {
-    padding-left: 4rem;
-  }
-
-  .nav__item {
-    width: 12rem;
-    margin: 0 1.5rem 0 1.5rem;
-  }
-
-  .logo img {
-    max-width: 8vw;
+    font-size: 3rem;
   }
 }
+@media (min-width: 1400px) {
+  .leyenda {
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+  }
 
+  .nav .nav__list .nav__item .nav__link {
+    line-height: 0.8cm;
+    font-size: 1.3rem;
+  }
+}
 @media (min-width: 1900px) {
-  .containerLogo {
-    margin-left: -10rem;
+  .leyenda {
+    font-size: 5.5rem;
+    letter-spacing: 0.7rem;
+    margin-bottom: 1rem;
   }
 
-  .nav__list--primary {
-    width: 100vw;
-    position: relative;
-    left: 12rem;
-  }
-  .nav__item {
-    margin-top: 5rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+  .nav .nav__list .nav__item .nav__link {
     font-size: 1.4rem;
-    width: fit-content;
   }
 }
-*/
 .containerSecas {
   background: #ff5500;
   background: linear-gradient(90deg, #ff5500 0%, #870000 50%);
@@ -950,7 +916,7 @@ path.svg-elem-12 {
 
 .intro-section {
   background: #ff5500;
-  background: linear-gradient(90deg, #ff5500 0%, #870000 50%);
+  background: linear-gradient(90deg, #ff5500 0%, #e9cdc0 100%);
   height: 100%;
   max-width: 100vw;
 }
