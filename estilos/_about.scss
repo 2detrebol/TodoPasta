@@ -1,10 +1,6 @@
 .containerAbout {
-  background: rgb(255, 85, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 85, 0, 1) 0%,
-    rgba(135, 0, 0, 1) 50%
-  );
+  background: $colorNaranja;
+  background: linear-gradient(90deg, $colorNaranja 0%, $colorPastel 100%);
   .row {
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
@@ -13,7 +9,7 @@
   }
 }
 .tituloAbout {
-  color: $colorBlanco;
+  color: $colorGris;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 5vw;
@@ -30,7 +26,7 @@
 }
 
 .textoNosotros {
-  color: $colorBlanco;
+  color: $colorGris;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 2.6vw;

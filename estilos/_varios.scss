@@ -1,10 +1,6 @@
 .containerVarios {
-  background: rgb(255, 85, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 85, 0, 1) 0%,
-    rgba(135, 0, 0, 1) 50%
-  );
+  background: $colorNaranja;
+  background: linear-gradient(90deg, $colorNaranja 0%, $colorPastel 100%);
   .row {
     --bs-gutter-x: 0;
     --bs-gutter-y: 0;
@@ -14,13 +10,13 @@
   .tituloVarios,
   .tituloSalsas,
   .tituloPostres {
-    color: $colorBlanco;
+    color: $colorGris;
     font-family: "Raleway", sans-serif;
     font-weight: 900;
-    font-size: 5vw;
+    font-size: 3.5vw;
     align-self: flex-start;
     h1 {
-      font-size: 6vw;
+      font-size: 4vw;
       font-family: "Raleway", sans-serif;
       font-weight: 900;
     }
@@ -44,7 +40,7 @@
       background-image: url("../imagenes/Varios/#{$salsa}.jpg");
       background-position: center;
       background-repeat: no-repeat;
-      margin: 2rem 0 2rem 0;
+      margin: 1rem 0 1rem 0;
       background-color: $colorBlanco;
       border-radius: 20px;
       @media (max-width: 768px) {

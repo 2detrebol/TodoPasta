@@ -418,7 +418,7 @@ path.svg-elem-12 {
 }
 .containerSecas {
   background: #ff5500;
-  background: linear-gradient(90deg, #ff5500 0%, #870000 50%);
+  background: linear-gradient(90deg, #ff5500 0%, #e9cdc0 100%);
 }
 .containerSecas .row {
   --bs-gutter-x: 0;
@@ -426,7 +426,7 @@ path.svg-elem-12 {
   overflow-x: hidden;
 }
 .containerSecas .tituloSecas {
-  color: #ffffff;
+  color: #333333;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 5vw;
@@ -517,7 +517,7 @@ path.svg-elem-12 {
 }
 .containerVarios {
   background: #ff5500;
-  background: linear-gradient(90deg, #ff5500 0%, #870000 50%);
+  background: linear-gradient(90deg, #ff5500 0%, #e9cdc0 100%);
   /*EACH*/
   /*SE HACE CON MIXIN PERO SERÍA SEGUN COMENTADO ABAJO CON VARIABLES ES =*/
   /*$ancho: 45%;
@@ -531,16 +531,16 @@ path.svg-elem-12 {
 .containerVarios .tituloVarios,
 .containerVarios .tituloSalsas,
 .containerVarios .tituloPostres {
-  color: #ffffff;
+  color: #333333;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  font-size: 5vw;
+  font-size: 3.5vw;
   align-self: flex-start;
 }
 .containerVarios .tituloVarios h1,
 .containerVarios .tituloSalsas h1,
 .containerVarios .tituloPostres h1 {
-  font-size: 6vw;
+  font-size: 4vw;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
 }
@@ -548,7 +548,7 @@ path.svg-elem-12 {
   background-image: url("../imagenes/Varios/quesoRallado.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
@@ -568,7 +568,7 @@ path.svg-elem-12 {
   background-image: url("../imagenes/Varios/fileto.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
@@ -588,7 +588,7 @@ path.svg-elem-12 {
   background-image: url("../imagenes/Varios/blanca.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
@@ -608,7 +608,7 @@ path.svg-elem-12 {
   background-image: url("../imagenes/Varios/cuatroQuesos.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
@@ -628,7 +628,7 @@ path.svg-elem-12 {
   background-image: url("../imagenes/Varios/bolognesa.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
@@ -648,7 +648,7 @@ path.svg-elem-12 {
   background-image: url("../imagenes/Varios/pesto.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
@@ -668,7 +668,7 @@ path.svg-elem-12 {
   background-image: url("../imagenes/Varios/pollo.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
@@ -688,7 +688,7 @@ path.svg-elem-12 {
   background-image: url("../imagenes/Varios/scarparo.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
@@ -837,7 +837,7 @@ path.svg-elem-12 {
 }
 .containerAbout {
   background: #ff5500;
-  background: linear-gradient(90deg, #ff5500 0%, #870000 50%);
+  background: linear-gradient(90deg, #ff5500 0%, #e9cdc0 100%);
 }
 .containerAbout .row {
   --bs-gutter-x: 0;
@@ -847,7 +847,7 @@ path.svg-elem-12 {
 }
 
 .tituloAbout {
-  color: #ffffff;
+  color: #333333;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 5vw;
@@ -864,7 +864,7 @@ path.svg-elem-12 {
 }
 
 .textoNosotros {
-  color: #ffffff;
+  color: #333333;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 2.6vw;
@@ -1024,7 +1024,7 @@ path.svg-elem-12 {
 
 .promocion {
   text-transform: capitalize;
-  color: #870000;
+  color: #ff5500;
   font-family: "Raleway", sans-serif;
   font-size: 5vw;
   font-weight: 900;
@@ -1044,7 +1044,7 @@ path.svg-elem-12 {
 .antes {
   margin-top: 0.5rem;
   font-size: 1.1rem;
-  color: #870000;
+  color: #ff5500;
 }
 
 .antes span {
@@ -1054,12 +1054,12 @@ path.svg-elem-12 {
 .ahora {
   margin-top: 0.5rem;
   font-size: 2rem;
-  color: #870000;
+  color: #ff5500;
   z-index: 50;
 }
 
 .contacto {
-  color: #870000;
+  color: #ff5500;
 }
 
 #panza1 {
@@ -1078,16 +1078,16 @@ path.svg-elem-12 {
 .contacto h3 {
   font-family: "Raleway", sans-serif;
   letter-spacing: 2px;
-  font-size: 1.4rem;
-  font-weight: 100;
+  font-size: 1.1rem;
+  font-weight: 600;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #333333;
 }
 
 .contacto h3 span {
   font-weight: 600;
   font-size: 2rem;
-  color: #ffffff;
+  color: #333333;
 }
 
 .contacto iframe {
@@ -1139,7 +1139,7 @@ path.svg-elem-12 {
 
 textarea::placeholder,
 input::placeholder {
-  color: #870000;
+  color: #ff5500;
 }
 
 #nombre,
@@ -1166,7 +1166,7 @@ input::placeholder {
 }
 
 #select option:checked {
-  color: #870000;
+  color: #ff5500;
 }
 
 #textA {
@@ -1174,7 +1174,7 @@ input::placeholder {
   font-family: "Raleway", sans-serif;
   padding-left: 0.5rem;
   padding-top: 0.5rem;
-  border: solid 1px #000000;
+  border: solid 1px #333333;
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -1226,7 +1226,7 @@ input::placeholder {
 .whatsapp a {
   display: inline-block;
   font-size: 1.5rem;
-  color: #870000;
+  color: #ff5500;
 }
 
 .instagram:hover .fa-instagram {
@@ -1252,7 +1252,7 @@ input::placeholder {
   max-width: 100%;
   height: 3rem;
   background: #ff5500;
-  background: linear-gradient(90deg, #ff5500 0%, #870000 50%);
+  background: linear-gradient(90deg, #ff5500 0%, #e9cdc0 100%);
   position: relative;
   overflow: hidden;
 }
@@ -1560,7 +1560,6 @@ input::placeholder {
 
   .direccion h3 {
     font-size: 2rem;
-    color: #ffffff;
   }
 
   .contacto iframe {
