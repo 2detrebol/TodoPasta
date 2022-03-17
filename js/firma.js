@@ -11,7 +11,7 @@ var viewport = $(window),
         bottomOnScreen = bottom >= viewportTop && bottom <= viewportBottom,
         elemVisible = topOnScreen || bottomOnScreen;
       self.toggleClass("activeSection", elemVisible);
-      console.log(
+     /* console.log(
         JSON.stringify({
           ".firmaSVG": self[0].classList[0],
           viewportTop: viewportTop,
@@ -22,7 +22,7 @@ var viewport = $(window),
           bottomOnScreen: bottomOnScreen,
           elemVisible: elemVisible,
         })
-      );
+      );*/
     });
   };
 viewport.scroll(setVisible);

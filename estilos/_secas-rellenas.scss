@@ -1,4 +1,4 @@
-.containerSecas {
+.containerSecasRellenas {
   background: $colorNaranja;
   background: linear-gradient(90deg, $colorNaranja 0%, $colorPastel 100%);
   .row {
@@ -6,7 +6,7 @@
     --bs-gutter-y: 0;
     overflow-x: hidden;
   }
-  .tituloSecas {
+  .tituloSecasRellenas {
     color: $colorGris;
     font-family: "Raleway", sans-serif;
     font-weight: 900;
@@ -96,7 +96,7 @@
 }
 
 @media (min-width: 1024px) {
-  .containerSecas .publicidad {
+  .containerSecasRellenas .publicidad {
     flex-direction: column;
     .publicidad {
       padding-bottom: 5rem;
