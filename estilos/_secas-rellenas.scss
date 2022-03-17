@@ -1,9 +1,7 @@
 .containerSecasRellenas {
   background: $colorNaranja;
   background: linear-gradient(90deg, $colorNaranja 0%, $colorPastel 100%);
-  .row {
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
+  .rowPersonal {    
     overflow-x: hidden;
   }
   .tituloSecasRellenas {

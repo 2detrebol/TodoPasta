@@ -5,7 +5,8 @@
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
 }
-.row {
+
+.rowPersonal {
   margin: 0;
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
@@ -20,9 +21,6 @@ svg {
   vertical-align: middle;
 }
 
-.col {
-  width: 100%;
-}
 
 header {
   background: $colorBlanco;

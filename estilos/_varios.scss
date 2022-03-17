@@ -40,14 +40,15 @@
       background-image: url("../imagenes/Varios/#{$salsa}.jpg");
       background-position: center;
       background-repeat: no-repeat;
+      background-size: auto 100%;
       margin: 1rem 0 1rem 0;
       background-color: $colorBlanco;
       border-radius: 20px;
-      @media (max-width: 768px) {
-        @include tamaño(45% * 2, 23rem);
+      @media (max-width: 767px) {
+        @include tamaño(25% * 3, 13rem);
       }
-      @media (min-width: 769px) {
-        @include tamaño(45%, 22rem);
+      @media (min-width: 768px) {
+        @include tamaño(43%, 19rem);
       }
     }
   }
@@ -59,14 +60,16 @@
       background-image: url("../imagenes/Varios/#{$preparados}.jpg");
       background-position: center;
       background-repeat: no-repeat;
+      background-size: auto 100%;
       margin: 2rem 0 2rem 0;
       background-color: $colorBlanco;
       border-radius: 20px;
-      @media (max-width: 768px) {
-        @include tamaño(45% * 2, 23rem);
+      
+      @media (max-width: 767px) {
+        @include tamaño(25% * 3, 13rem);
       }
-      @media (min-width: 769px) {
-        @include tamaño(45%, 22rem);
+      @media (min-width: 768px) {
+        @include tamaño(43%, 19rem);
       }
     }
   }

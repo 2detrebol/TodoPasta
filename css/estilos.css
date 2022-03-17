@@ -9,7 +9,7 @@
   --bs-gutter-y: 0;
 }
 
-.row {
+.rowPersonal {
   margin: 0;
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
@@ -22,10 +22,6 @@ img {
 img,
 svg {
   vertical-align: middle;
-}
-
-.col {
-  width: 100%;
 }
 
 header {
@@ -421,9 +417,7 @@ path.svg-elem-12 {
   background: #ff5500;
   background: linear-gradient(90deg, #ff5500 0%, #e9cdc0 100%);
 }
-.containerSecasRellenas .row {
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
+.containerSecasRellenas .rowPersonal {
   overflow-x: hidden;
 }
 .containerSecasRellenas .tituloSecasRellenas {
@@ -549,240 +543,252 @@ path.svg-elem-12 {
   background-image: url("../imagenes/Varios/quesoRallado.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .containerVarios .quesoRallado-fondo {
-    width: 90%;
-    height: 23rem;
+    width: 75%;
+    height: 13rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .containerVarios .quesoRallado-fondo {
-    width: 45%;
-    height: 22rem;
+    width: 43%;
+    height: 19rem;
   }
 }
 .containerVarios .fileto-fondo {
   background-image: url("../imagenes/Varios/fileto.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .containerVarios .fileto-fondo {
-    width: 90%;
-    height: 23rem;
+    width: 75%;
+    height: 13rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .containerVarios .fileto-fondo {
-    width: 45%;
-    height: 22rem;
+    width: 43%;
+    height: 19rem;
   }
 }
 .containerVarios .blanca-fondo {
   background-image: url("../imagenes/Varios/blanca.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .containerVarios .blanca-fondo {
-    width: 90%;
-    height: 23rem;
+    width: 75%;
+    height: 13rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .containerVarios .blanca-fondo {
-    width: 45%;
-    height: 22rem;
+    width: 43%;
+    height: 19rem;
   }
 }
 .containerVarios .cuatroQuesos-fondo {
   background-image: url("../imagenes/Varios/cuatroQuesos.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .containerVarios .cuatroQuesos-fondo {
-    width: 90%;
-    height: 23rem;
+    width: 75%;
+    height: 13rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .containerVarios .cuatroQuesos-fondo {
-    width: 45%;
-    height: 22rem;
+    width: 43%;
+    height: 19rem;
   }
 }
 .containerVarios .bolognesa-fondo {
   background-image: url("../imagenes/Varios/bolognesa.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .containerVarios .bolognesa-fondo {
-    width: 90%;
-    height: 23rem;
+    width: 75%;
+    height: 13rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .containerVarios .bolognesa-fondo {
-    width: 45%;
-    height: 22rem;
+    width: 43%;
+    height: 19rem;
   }
 }
 .containerVarios .pesto-fondo {
   background-image: url("../imagenes/Varios/pesto.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .containerVarios .pesto-fondo {
-    width: 90%;
-    height: 23rem;
+    width: 75%;
+    height: 13rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .containerVarios .pesto-fondo {
-    width: 45%;
-    height: 22rem;
+    width: 43%;
+    height: 19rem;
   }
 }
 .containerVarios .pollo-fondo {
   background-image: url("../imagenes/Varios/pollo.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .containerVarios .pollo-fondo {
-    width: 90%;
-    height: 23rem;
+    width: 75%;
+    height: 13rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .containerVarios .pollo-fondo {
-    width: 45%;
-    height: 22rem;
+    width: 43%;
+    height: 19rem;
   }
 }
 .containerVarios .scarparo-fondo {
   background-image: url("../imagenes/Varios/scarparo.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   margin: 1rem 0 1rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .containerVarios .scarparo-fondo {
-    width: 90%;
-    height: 23rem;
+    width: 75%;
+    height: 13rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .containerVarios .scarparo-fondo {
-    width: 45%;
-    height: 22rem;
+    width: 43%;
+    height: 19rem;
   }
 }
 .containerVarios .arrolladoAtun-fondo {
   background-image: url("../imagenes/Varios/arrolladoAtun.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   margin: 2rem 0 2rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .containerVarios .arrolladoAtun-fondo {
-    width: 90%;
-    height: 23rem;
+    width: 75%;
+    height: 13rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .containerVarios .arrolladoAtun-fondo {
-    width: 45%;
-    height: 22rem;
+    width: 43%;
+    height: 19rem;
   }
 }
 .containerVarios .arrolladoPollo-fondo {
   background-image: url("../imagenes/Varios/arrolladoPollo.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   margin: 2rem 0 2rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .containerVarios .arrolladoPollo-fondo {
-    width: 90%;
-    height: 23rem;
+    width: 75%;
+    height: 13rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .containerVarios .arrolladoPollo-fondo {
-    width: 45%;
-    height: 22rem;
+    width: 43%;
+    height: 19rem;
   }
 }
 .containerVarios .arrolladoVerdura-fondo {
   background-image: url("../imagenes/Varios/arrolladoVerdura.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   margin: 2rem 0 2rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .containerVarios .arrolladoVerdura-fondo {
-    width: 90%;
-    height: 23rem;
+    width: 75%;
+    height: 13rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .containerVarios .arrolladoVerdura-fondo {
-    width: 45%;
-    height: 22rem;
+    width: 43%;
+    height: 19rem;
   }
 }
 .containerVarios .sandwichMiga-fondo {
   background-image: url("../imagenes/Varios/sandwichMiga.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   margin: 2rem 0 2rem 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .containerVarios .sandwichMiga-fondo {
-    width: 90%;
-    height: 23rem;
+    width: 75%;
+    height: 13rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .containerVarios .sandwichMiga-fondo {
-    width: 45%;
-    height: 22rem;
+    width: 43%;
+    height: 19rem;
   }
 }
 .containerVarios .card h4 {
@@ -839,10 +845,6 @@ path.svg-elem-12 {
 .containerAbout {
   background: #ff5500;
   background: linear-gradient(90deg, #ff5500 0%, #e9cdc0 100%);
-}
-.containerAbout .row {
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
   overflow-x: hidden;
   align-items: flex-start;
 }
@@ -857,11 +859,10 @@ path.svg-elem-12 {
 }
 
 .sobreNosotros {
-  max-width: 60%;
+  max-width: 50%;
 }
-
-.fotoNosotros {
-  object-fit: cover;
+.sobreNosotros .fotoNosotros img {
+  width: 100%;
 }
 
 .textoNosotros {
