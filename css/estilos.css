@@ -164,12 +164,12 @@ header {
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  margin-top: 1rem;
+  padding-top: 2.8rem;
 }
 
 .img-slider {
   position: relative;
-  width: 90vw;
+  width: 100vw;
   height: 30vh;
   align-self: center;
   display: flex;
@@ -191,17 +191,10 @@ header {
   transition-property: clip-path;
 }
 
-.vid {
+.slide video,
+.slide img {
   z-index: 1;
   width: 100%;
-  border-radius: 5px;
-  box-shadow: 0 0 10px silver;
-}
-
-.img-slider .slide img {
-  z-index: 1;
-  width: 100%;
-  border-radius: 5px;
   box-shadow: 0 0 10px silver;
 }
 
