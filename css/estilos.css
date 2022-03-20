@@ -544,10 +544,12 @@ header {
 
 .footer {
   max-width: 100vw;
-  background: linear-gradient(75deg, #e9cdc0 0%, #958781 100%);
+  background: #e9cdc0;
+  background: linear-gradient(90deg, #e9cdc0 0%, #958781 100%);
 }
 .footer .waves {
   width: 100%;
+  height: 15vh;
   vertical-align: middle;
   position: relative;
   /*Shrinking for mobile*/

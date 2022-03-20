@@ -550,9 +550,11 @@ header {
 //WAVES//
 .footer {
   max-width: 100vw;
-  background: linear-gradient(75deg, $colorPastel 0%, $colorBeige 100%);
+  background: $colorPastel;
+  background: linear-gradient(90deg, $colorPastel 0%, $colorBeige 100%);
   .waves {
     width: 100%;
+    height: 15vh;
     vertical-align: middle;
     position: relative;
     /*Shrinking for mobile*/
