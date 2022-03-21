@@ -48,21 +48,6 @@
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 100vw;
-  }
-
-  .ContainerCarrousel {
-    height: 26rem;
-    margin-top: 0;
-  }
-
-  .img-slider {
-    height: 26rem;
-    width: 90vw;
-    object-fit: cover;
-  }
-
   #panza {
     width: 100vw;
   }
@@ -71,10 +56,6 @@
     width: 1rem;
     height: 1rem;
     margin: 1rem;
-  }
-
-  .promo_img {
-    margin-top: -3rem;
   }
 
   .promocion {
@@ -102,17 +83,6 @@
 }
 
 @media (min-width: 1024px) {
-  .ContainerCarrousel {
-    height: 32rem;
-    margin-top: 0;
-  }
-
-  .img-slider {
-    height: 29rem;
-    width: 80vw;
-    object-fit: cover;
-  }
-
   .promoMes {
     top: -6.5rem;
   }
@@ -217,17 +187,6 @@
   }
 }
 @media (min-width: 1200px) {
-  .ContainerCarrousel {
-    margin-top: 1.2rem;
-    height: 25rem;
-    max-width: 100vw;
-  }
-
-  .img-slider {
-    height: 30rem;
-    width: 60vw;
-    object-fit: cover;
-  }
   .wave {
     top: 120%;
     left: -10%;
@@ -237,17 +196,6 @@
 }
 
 @media (min-width: 1400px) {
-  .ContainerCarrousel {
-    height: 29rem;
-    margin-top: 10rem;
-  }
-
-  .img-slider {
-    height: 29rem;
-    width: 60.5%;
-    object-fit: cover;
-  }
-
   .promo_img img {
     width: 30rem;
     margin-left: -0.5rem;
@@ -269,17 +217,6 @@
 @media (min-width: 1900px) {
   .container {
     max-width: 1900px;
-  }
-
-  .ContainerCarrousel {
-    height: 40rem;
-    margin-top: 5rem;
-  }
-
-  .img-slider {
-    height: 50rem;
-    width: 70vw;
-    object-fit: cover;
   }
 
   .promoMes {
