@@ -32,21 +32,14 @@
 }
 
 /*MEDIA QUERIES*/
-
+/*
 @media (min-width: 576px) {
-  .col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .card .card-content h4,
   .card .card-content h5,
   .card .card-content i {
     font-size: 1rem;
   }
 }
-
 @media (min-width: 768px) {
   #panza {
     width: 100vw;
@@ -79,119 +72,6 @@
   .card .card-content h5,
   .card .card-content i {
     font-size: 0.75rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .promoMes {
-    top: -6.5rem;
-  }
-
-  .promocion {
-    margin-top: -4rem;
-  }
-
-  .promo_img img {
-    width: 19.5rem;
-    margin-left: 2.5rem;
-  }
-
-  .oferta {
-    font-size: 2.3rem;
-  }
-
-  .antes {
-    font-size: 1.8rem;
-  }
-
-  .ahora {
-    font-size: 3rem;
-  }
-
-  .direccion {
-    max-width: 51%;
-  }
-
-  .direccion h3 span {
-    margin-top: -4rem;
-    font-size: 3rem;
-  }
-
-  .direccion h3 {
-    font-size: 2rem;
-  }
-
-  .contacto iframe {
-    max-width: 75%;
-    max-height: 16rem;
-  }
-
-  .formulario {
-    margin-top: -1rem;
-  }
-
-  .form {
-    font-size: 1.5rem;
-  }
-
-  .formulario input {
-    width: 80%;
-    height: 2rem;
-    padding-left: 0.5rem;
-    font-size: 1rem;
-  }
-
-  #nombre,
-  #correo {
-    margin-left: 2.5rem;
-  }
-
-  #select {
-    font-size: 1.3rem;
-  }
-
-  #select > select {
-    height: 2rem;
-    font-size: 0.9rem;
-  }
-
-  #textA {
-    font-size: 1.1rem;
-  }
-
-  .formulario {
-    font-size: 1.6rem;
-  }
-
-  #check {
-    width: 1rem;
-    top: 0.6rem;
-  }
-
-  .instagram a,
-  .whatsapp a {
-    font-size: 1.5rem;
-  }
-
-  .wave {
-    top: 120%;
-    left: -25%;
-    width: 95rem;
-    height: 98rem;
-  }
-
-  .card .card-content h4,
-  .card .card-content h5,
-  .card .card-content i {
-    font-size: 0.9rem;
-  }
-}
-@media (min-width: 1200px) {
-  .wave {
-    top: 120%;
-    left: -10%;
-    width: 95rem;
-    height: 98rem;
   }
 }
 
@@ -239,3 +119,4 @@
     height: 98rem;
   }
 }
+*/
