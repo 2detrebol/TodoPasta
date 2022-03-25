@@ -1326,6 +1326,7 @@ path.svg-elem-12 {
   font-size: 5vw;
   margin-bottom: 0;
   align-self: flex-start;
+  text-shadow: 0 1px 0 #ffffff, 0 2px 0 #e9cdc0, 0 3px 0 #e9cdc0, 0 4px 0 #e9cdc0, 0 5px 0 #958781, 0 6px 0 #958781, 0 7px 0 #ff5500;
 }
 .containerSecasRellenas .card {
   position: relative;
@@ -1384,21 +1385,32 @@ path.svg-elem-12 {
 .containerSecasRellenas .publicidad {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   margin-bottom: 1rem;
-  animation: flash 9s linear;
+  animation: headShake 3s linear;
   animation-iteration-count: infinite;
 }
-.containerSecasRellenas .publicidadF {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-right: 6.5rem;
-  padding-left: 3.5rem;
-  animation: flash 7s linear;
-  animation-iteration-count: infinite;
+@media (min-width: 1024px) {
+  .containerSecasRellenas .publicidad {
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+  }
+}
+.containerSecasRellenas .publicidad img {
+  max-width: 80%;
+}
+@media (min-width: 576px) {
+  .containerSecasRellenas .publicidad img {
+    max-width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .containerSecasRellenas .publicidad img {
+    margin-top: 5rem;
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1430,6 +1442,7 @@ path.svg-elem-12 {
   font-weight: 900;
   font-size: 3.5vw;
   align-self: flex-start;
+  text-shadow: 0 1px 0 #ffffff, 0 2px 0 #e9cdc0, 0 3px 0 #e9cdc0, 0 4px 0 #e9cdc0, 0 5px 0 #958781, 0 6px 0 #958781, 0 7px 0 #ff5500;
 }
 .containerVarios .tituloVarios h1,
 .containerVarios .tituloSalsas h1,
@@ -1714,33 +1727,35 @@ path.svg-elem-12 {
 .containerVarios .publicidad {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   margin-bottom: 1rem;
-  animation: flash 9s linear;
+  animation: headShake 3s linear;
   animation-iteration-count: infinite;
 }
-.containerVarios .publicidadF {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-right: 6.5rem;
-  padding-left: 3.5rem;
-  padding-bottom: 1rem;
-  animation: flash 7s linear;
-  animation-iteration-count: infinite;
-}
-
 @media (min-width: 1024px) {
   .containerVarios .publicidad {
     flex-direction: column;
-  }
-  .containerVarios .publicidad .publicidad {
     padding-bottom: 8rem;
     padding-top: 1rem;
   }
 }
+.containerVarios .publicidad img {
+  max-width: 80%;
+}
+@media (min-width: 576px) {
+  .containerVarios .publicidad img {
+    max-width: 60%;
+  }
+}
+@media (min-width: 1024px) {
+  .containerVarios .publicidad img {
+    margin-top: 5rem;
+    max-width: 100%;
+  }
+}
+
 .containerAbout {
   background: #e9cdc0;
   background: linear-gradient(90deg, #e9cdc0 0%, #958781 100%);
@@ -1752,13 +1767,35 @@ path.svg-elem-12 {
   color: #333333;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  font-size: 5vw;
-  margin-bottom: 0;
+  font-size: 2rem;
   align-self: flex-start;
+  margin: 2rem 0 1.5rem;
+  text-shadow: 0 1px 0 #ffffff, 0 2px 0 #e9cdc0, 0 3px 0 #e9cdc0, 0 4px 0 #e9cdc0, 0 5px 0 #958781, 0 6px 0 #958781, 0 7px 0 #ff5500;
+}
+@media (min-width: 576px) {
+  .tituloAbout {
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .tituloAbout {
+    font-size: 3.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  .tituloAbout {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 1900px) {
+  .tituloAbout {
+    font-size: 7rem;
+  }
 }
 
 .sobreNosotros {
-  max-width: 50%;
+  max-width: 70%;
 }
 .sobreNosotros .fotoNosotros img {
   width: 100%;
@@ -1776,29 +1813,35 @@ path.svg-elem-12 {
 .publicidad {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  padding: 0 0.5rem 0 0.5rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  animation: flash 9s linear;
+  justify-content: center;
+  padding: 0.5rem 0 0.5rem;
+  animation: headShake 3s linear;
   animation-iteration-count: infinite;
 }
-
-.publicidadF {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0 6.5rem 0 3.5rem;
-  margin-bottom: 1rem;
-  animation: flash 7s linear;
-  animation-iteration-count: infinite;
+@media (min-width: 1024px) {
+  .publicidad {
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+  }
+}
+.publicidad img {
+  max-width: 45%;
+}
+@media (min-width: 576px) {
+  .publicidad img {
+    max-width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .publicidad img {
+    max-width: 90%;
+    margin: 1rem 0 1rem;
+  }
 }
 
 @media (min-width: 1024px) {
-  .containerAbout .publicidad {
+  .publicidad {
     flex-direction: column;
-  }
-  .containerAbout .publicidad .publicidad {
     padding-bottom: 0.5rem;
   }
 }
