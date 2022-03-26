@@ -1406,8 +1406,6 @@ path.svg-elem-12 {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   margin-bottom: 1rem;
-  animation: headShake 3s linear;
-  animation-iteration-count: infinite;
 }
 @media (min-width: 1024px) {
   .containerSecasRellenas .publicidad {
@@ -1419,6 +1417,15 @@ path.svg-elem-12 {
   display: flex;
   justify-content: center;
   text-decoration: none;
+}
+.containerSecasRellenas .publicidad .publicidad__espresso,
+.containerSecasRellenas .publicidad .publicidad__dibu,
+.containerSecasRellenas .publicidad .publicidad__matcha {
+  animation: headShake 3s linear;
+  animation-iteration-count: infinite;
+}
+.containerSecasRellenas .publicidad .publicidad__dibu {
+  animation-delay: 1.6s;
 }
 .containerSecasRellenas .publicidad img {
   max-width: 80%;
@@ -1750,8 +1757,6 @@ path.svg-elem-12 {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   margin-bottom: 1rem;
-  animation: headShake 3s linear;
-  animation-iteration-count: infinite;
 }
 @media (min-width: 1024px) {
   .containerVarios .publicidad {
@@ -1764,6 +1769,15 @@ path.svg-elem-12 {
   display: flex;
   justify-content: center;
   text-decoration: none;
+}
+.containerVarios .publicidad .publicidad__espresso,
+.containerVarios .publicidad .publicidad__dibu,
+.containerVarios .publicidad .publicidad__matcha {
+  animation: headShake 3s linear;
+  animation-iteration-count: infinite;
+}
+.containerVarios .publicidad .publicidad__dibu {
+  animation-delay: 1.6s;
 }
 .containerVarios .publicidad img {
   max-width: 100%;
@@ -1843,8 +1857,6 @@ path.svg-elem-12 {
   flex-direction: row;
   justify-content: center;
   padding: 0.5rem 0 0.5rem;
-  animation: headShake 3s linear;
-  animation-iteration-count: infinite;
 }
 @media (min-width: 1024px) {
   .publicidad {
@@ -1856,6 +1868,15 @@ path.svg-elem-12 {
   display: flex;
   justify-content: center;
   text-decoration: none;
+}
+.publicidad .publicidad__espresso,
+.publicidad .publicidad__dibu,
+.publicidad .publicidad__matcha {
+  animation: headShake 3s linear;
+  animation-iteration-count: infinite;
+}
+.publicidad .publicidad__dibu {
+  animation-delay: 1.6s;
 }
 .publicidad img {
   max-width: 45%;
