@@ -8,7 +8,7 @@
     color: $colorGris;
     font-family: "Raleway", sans-serif;
     font-weight: 900;
-    font-size: 6vw;
+    font-size: 5vw;
     margin-bottom: 0;
     align-self: flex-start;
     text-shadow: 0 1px 0 $colorBlanco, 0 2px 0 $colorPastel,
@@ -23,10 +23,20 @@
     border: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     align-items: center;
-    max-width: 70%;
+    max-width: 65%;
+    @media (min-width: 576px) {
+      max-width: 50.1%;
+    }
     .card-image {
+      height: 100%;
       width: 75%;
-      .card-image img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (min-width: 1200px) {
+        width: 100%;
+      }
+      img {
         object-fit: cover;
       }
     }
@@ -40,20 +50,22 @@
     &:focus .card-content h4,
     &:focus .card-content h5,
     &:focus .card-content i {
-      transform: translateY(1rem);
+      transform: translateY(0rem);
       opacity: 1;
     }
     .card-content {
       position: absolute;
       width: 100%;
       bottom: -25rem;
-      color: $colorRojo;
       background: rgba(255, 255, 255, 0.2);
       backdrop-filter: blur(35px);
       height: 100%;
       transition: bottom 0.5s ease-in;
       box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
       justify-content: center;
+      @media (min-width: 1200px) {
+        bottom: -35rem;
+      }
       h4,
       h5,
       i {
@@ -62,16 +74,25 @@
         text-align: center;
         transition: 1.7s;
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         opacity: 0;
         transform: translateY(-3rem);
         transition-delay: 0.2s;
         max-width: 90%;
+        color: $colorNegro;
+        text-shadow: 0 1px 0 $colorNaranja;
+        @media (min-width: 1200px) {
+          font-size: 1.5rem;
+        }
+        @media (min-width: 1900px) {
+          font-size: 2rem;
+        }
       }
       h5 {
         transition: 0.5s;
         font-weight: 200;
         letter-spacing: 2px;
+        text-shadow: none;
       }
     }
   }

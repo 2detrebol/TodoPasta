@@ -1340,7 +1340,7 @@ path.svg-elem-12 {
   color: #333333;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  font-size: 6vw;
+  font-size: 5vw;
   margin-bottom: 0;
   align-self: flex-start;
   text-shadow: 0 1px 0 #ffffff, 0 2px 0 #e9cdc0, 0 3px 0 #e9cdc0, 0 4px 0 #e9cdc0, 0 5px 0 #958781, 0 6px 0 #958781, 0 7px 0 #ff5500;
@@ -1353,32 +1353,50 @@ path.svg-elem-12 {
   border: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   align-items: center;
-  max-width: 70%;
+  max-width: 65%;
+}
+@media (min-width: 576px) {
+  .containerSecasRellenas .card {
+    max-width: 50.1%;
+  }
 }
 .containerSecasRellenas .card .card-image {
+  height: 100%;
   width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.containerSecasRellenas .card .card-image .card-image img {
+@media (min-width: 1200px) {
+  .containerSecasRellenas .card .card-image {
+    width: 100%;
+  }
+}
+.containerSecasRellenas .card .card-image img {
   object-fit: cover;
 }
 .containerSecasRellenas .card:hover .card-content, .containerSecasRellenas .card:focus .card-content {
   bottom: 0;
 }
 .containerSecasRellenas .card:hover .card-content h4, .containerSecasRellenas .card:hover .card-content h5, .containerSecasRellenas .card:hover .card-content i, .containerSecasRellenas .card:focus .card-content h4, .containerSecasRellenas .card:focus .card-content h5, .containerSecasRellenas .card:focus .card-content i {
-  transform: translateY(1rem);
+  transform: translateY(0rem);
   opacity: 1;
 }
 .containerSecasRellenas .card .card-content {
   position: absolute;
   width: 100%;
   bottom: -25rem;
-  color: #870000;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(35px);
   height: 100%;
   transition: bottom 0.5s ease-in;
   box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
   justify-content: center;
+}
+@media (min-width: 1200px) {
+  .containerSecasRellenas .card .card-content {
+    bottom: -35rem;
+  }
 }
 .containerSecasRellenas .card .card-content h4,
 .containerSecasRellenas .card .card-content h5,
@@ -1388,16 +1406,33 @@ path.svg-elem-12 {
   text-align: center;
   transition: 1.7s;
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   opacity: 0;
   transform: translateY(-3rem);
   transition-delay: 0.2s;
   max-width: 90%;
+  color: #000000;
+  text-shadow: 0 1px 0 #ff5500;
+}
+@media (min-width: 1200px) {
+  .containerSecasRellenas .card .card-content h4,
+.containerSecasRellenas .card .card-content h5,
+.containerSecasRellenas .card .card-content i {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1900px) {
+  .containerSecasRellenas .card .card-content h4,
+.containerSecasRellenas .card .card-content h5,
+.containerSecasRellenas .card .card-content i {
+    font-size: 2rem;
+  }
 }
 .containerSecasRellenas .card .card-content h5 {
   transition: 0.5s;
   font-weight: 200;
   letter-spacing: 2px;
+  text-shadow: none;
 }
 .containerSecasRellenas .publicidad {
   display: flex;
