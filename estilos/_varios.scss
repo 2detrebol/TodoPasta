@@ -13,14 +13,13 @@
     color: $colorGris;
     font-family: "Raleway", sans-serif;
     font-weight: 900;
-    font-size: 3.5vw;
+    font-size: 5.5vw;
     align-self: flex-start;
     text-shadow: 0 1px 0 $colorBlanco, 0 2px 0 $colorPastel,
       0 3px 0 $colorPastel, 0 4px 0 $colorPastel, 0 5px 0 $colorBeige,
       0 6px 0 $colorBeige, 0 7px 0 $colorNaranja;
     h1 {
-      font-size: 4vw;
-      font-family: "Raleway", sans-serif;
+      font-size: 6.5vw;
       font-weight: 900;
     }
   }
@@ -32,9 +31,6 @@
     width: $width;
     height: $height;
   }
-
-  /*$ancho: 45%;
-  $alto: 23rem;*/
 
   @each $salsa in quesoRallado, fileto, blanca, cuatroQuesos, bolognesa, pesto,
     pollo, scarparo
@@ -64,10 +60,10 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: auto 100%;
-      margin: 2rem 0 2rem 0;
+      margin: 1rem 0 1rem 0;
       background-color: $colorBlanco;
       border-radius: 20px;
-      
+
       @media (max-width: 767px) {
         @include tamaño(25% * 3, 13rem);
       }
@@ -81,7 +77,7 @@
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 1.65rem;
-    color: #000000;
+    color: $colorNegro;
     -webkit-text-stroke: 1px $colorBlanco;
   }
   .card i {
@@ -95,7 +91,7 @@
   .card h5 {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: #000000;
     text-shadow: -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff,
       1px 1px 0px #fff;
@@ -110,23 +106,27 @@
     margin-bottom: 1rem;
     animation: headShake 3s linear;
     animation-iteration-count: infinite;
-    @media (min-width: 1024px) {     
-        flex-direction: column;        
-          padding-bottom: 8rem;
-          padding-top: 1rem;
+    @media (min-width: 1024px) {
+      flex-direction: column;
+      padding-bottom: 8rem;
+      padding-top: 1rem;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
     }
     img {
-      max-width: 80%;
-      @media (min-width: 576px) {      
-        max-width: 60%;        
-      }          
-      @media (min-width: 1024px) {      
-        margin-top: 5rem;
-        max-width: 100%;        
-      }          
-    } 
+      max-width: 100%;
+      @media (min-width: 576px) {
+        max-width: 60%;
+      }
+      @media (min-width: 768px) {
+        max-width: 75%;
+      }
+      @media (min-width: 1024px) {
+        max-width: 100%;
+      }
+    }
   }
-  
 }
-
-

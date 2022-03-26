@@ -3,37 +3,36 @@
   background: linear-gradient(90deg, $colorPastel 0%, $colorBeige 100%);
   overflow-x: hidden;
   align-items: flex-start;
-  
 }
 .tituloAbout {
   color: $colorGris;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
-  font-size: 2rem;  
+  font-size: 2rem;
   align-self: flex-start;
   margin: 2rem 0 1.5rem;
-  text-shadow: 0 1px 0 $colorBlanco, 0 2px 0 $colorPastel,
-      0 3px 0 $colorPastel, 0 4px 0 $colorPastel, 0 5px 0 $colorBeige,
-      0 6px 0 $colorBeige, 0 7px 0 $colorNaranja;
-      @media (min-width: 576px) {
-        margin-top: 2.5rem;
-        font-size: 2.5rem;  
-      }
-      @media (min-width: 1200px) {        
-        font-size: 3.8rem;  
-      }      
-      @media (min-width: 1400px) {        
-        font-size: 5rem;  
-      }      
-      @media (min-width: 1900px) {        
-        font-size: 7rem;  
-      }      
+  text-shadow: 0 1px 0 $colorBlanco, 0 2px 0 $colorPastel, 0 3px 0 $colorPastel,
+    0 4px 0 $colorPastel, 0 5px 0 $colorBeige, 0 6px 0 $colorBeige,
+    0 7px 0 $colorNaranja;
+  @media (min-width: 576px) {
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+  }
+  @media (min-width: 1200px) {
+    font-size: 3.8rem;
+  }
+  @media (min-width: 1400px) {
+    font-size: 5rem;
+  }
+  @media (min-width: 1900px) {
+    font-size: 7rem;
+  }
 }
 
 .sobreNosotros {
   max-width: 70%;
-  .fotoNosotros img {    
-    width:100%;
+  .fotoNosotros img {
+    width: 100%;
   }
 }
 
@@ -48,30 +47,34 @@
 .publicidad {
   display: flex;
   flex-direction: row;
-  justify-content: center;    
+  justify-content: center;
   padding: 0.5rem 0 0.5rem;
   animation: headShake 3s linear;
   animation-iteration-count: infinite;
-  @media (min-width: 1024px) {      
-      flex-direction: column;
-      padding-bottom: 0.5rem;      
-    }
+  @media (min-width: 1024px) {
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
   img {
-    max-width: 45%; 
-    @media (min-width: 576px) {      
-      max-width: 40%;        
-    }   
-    @media (min-width: 1024px) {      
-      max-width: 90%;  
-      margin: 1rem 0 1rem;      
+    max-width: 45%;
+    @media (min-width: 576px) {
+      max-width: 40%;
+    }
+    @media (min-width: 1024px) {
+      max-width: 90%;
+      margin: 1rem 0 1rem;
     }
   }
 }
 
-
-@media (min-width: 1024px) {  
-    .publicidad {
-      flex-direction: column;
-      padding-bottom: 0.5rem;
-    }  
+@media (min-width: 1024px) {
+  .publicidad {
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+  }
 }

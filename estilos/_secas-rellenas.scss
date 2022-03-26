@@ -1,14 +1,14 @@
 .containerSecasRellenas {
   background: $colorPastel;
   background: linear-gradient(90deg, $colorPastel 0%, $colorBeige 100%);
-  .rowPersonal {    
+  .rowPersonal {
     overflow-x: hidden;
   }
   .tituloSecasRellenas {
     color: $colorGris;
     font-family: "Raleway", sans-serif;
     font-weight: 900;
-    font-size: 5vw;
+    font-size: 6vw;
     margin-bottom: 0;
     align-self: flex-start;
     text-shadow: 0 1px 0 $colorBlanco, 0 2px 0 $colorPastel,
@@ -84,21 +84,26 @@
     margin-bottom: 1rem;
     animation: headShake 3s linear;
     animation-iteration-count: infinite;
-    @media (min-width: 1024px) {      
-        flex-direction: column;        
-        padding-bottom: 0.5rem;
-      }
+    @media (min-width: 1024px) {
+      flex-direction: column;
+      padding-bottom: 0.5rem;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+    }
     img {
       max-width: 80%;
-      @media (min-width: 576px) {      
-        max-width: 60%;        
-      }          
-      @media (min-width: 1024px) {      
+      @media (min-width: 576px) {
+        max-width: 60%;
+      }
+      @media (min-width: 1024px) {
         margin-top: 5rem;
-        max-width: 100%;        
-      }          
+        max-width: 100%;
+      }
     }
-  }  
+  }
 }
 
 @media (min-width: 1024px) {
