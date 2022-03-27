@@ -4,6 +4,7 @@
   overflow-x: hidden;
   align-items: flex-start;
 }
+
 .tituloAbout {
   color: $colorGris;
   font-family: "Raleway", sans-serif;
@@ -14,16 +15,20 @@
   text-shadow: 0 1px 0 $colorBlanco, 0 2px 0 $colorPastel, 0 3px 0 $colorPastel,
     0 4px 0 $colorPastel, 0 5px 0 $colorBeige, 0 6px 0 $colorBeige,
     0 7px 0 $colorNaranja;
+
   @media (min-width: 576px) {
     margin-top: 2.5rem;
     font-size: 2.5rem;
   }
+
   @media (min-width: 1200px) {
     font-size: 3.8rem;
   }
+
   @media (min-width: 1400px) {
     font-size: 5rem;
   }
+
   @media (min-width: 1900px) {
     font-size: 7rem;
   }
@@ -31,6 +36,7 @@
 
 .sobreNosotros {
   max-width: 70%;
+
   .fotoNosotros img {
     width: 100%;
   }
@@ -44,34 +50,42 @@
   max-width: 90%;
   text-align: center;
 }
+
 .publicidad {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 0.5rem 0 0.5rem;
+
   @media (min-width: 1024px) {
     flex-direction: column;
     padding-bottom: 0.5rem;
   }
+
   a {
     display: flex;
     justify-content: center;
     text-decoration: none;
   }
+
   .publicidad__espresso,
   .publicidad__dibu,
   .publicidad__matcha {
     animation: headShake 3s linear;
     animation-iteration-count: infinite;
   }
+
   .publicidad__dibu {
     animation-delay: 1.6s;
   }
+
   img {
     max-width: 45%;
+
     @media (min-width: 576px) {
       max-width: 40%;
     }
+
     @media (min-width: 1024px) {
       max-width: 90%;
       margin: 1rem 0 1rem;

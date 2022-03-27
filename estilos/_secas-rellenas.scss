@@ -1,9 +1,11 @@
 .containerSecasRellenas {
   background: $colorPastel;
   background: linear-gradient(90deg, $colorPastel 0%, $colorBeige 100%);
+
   .rowPersonal {
     overflow-x: hidden;
   }
+
   .tituloSecasRellenas {
     color: $colorGris;
     font-family: "Raleway", sans-serif;
@@ -15,6 +17,7 @@
       0 3px 0 $colorPastel, 0 4px 0 $colorPastel, 0 5px 0 $colorBeige,
       0 6px 0 $colorBeige, 0 7px 0 $colorNaranja;
   }
+
   .card {
     position: relative;
     border-radius: 20px;
@@ -24,26 +27,32 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     align-items: center;
     max-width: 65%;
+
     @media (min-width: 576px) {
       max-width: 50.1%;
     }
+
     .card-image {
       height: 100%;
       width: 75%;
       display: flex;
       justify-content: center;
       align-items: center;
+
       @media (min-width: 1200px) {
         width: 100%;
       }
+
       img {
         object-fit: cover;
       }
     }
+
     &:hover .card-content,
     &:focus .card-content {
       bottom: 0;
     }
+
     &:hover .card-content h4,
     &:hover .card-content h5,
     &:hover .card-content i,
@@ -53,6 +62,7 @@
       transform: translateY(0rem);
       opacity: 1;
     }
+
     .card-content {
       position: absolute;
       width: 100%;
@@ -63,9 +73,11 @@
       transition: bottom 0.5s ease-in;
       box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
       justify-content: center;
+
       @media (min-width: 1200px) {
         bottom: -35rem;
       }
+
       h4,
       h5,
       i {
@@ -81,13 +93,16 @@
         max-width: 90%;
         color: $colorNegro;
         text-shadow: 0 1px 0 $colorNaranja;
+
         @media (min-width: 1200px) {
           font-size: 1.5rem;
         }
+
         @media (min-width: 1900px) {
           font-size: 2rem;
         }
       }
+
       h5 {
         transition: 0.5s;
         font-weight: 200;
@@ -96,6 +111,7 @@
       }
     }
   }
+
   .publicidad {
     display: flex;
     flex-direction: row;
@@ -103,29 +119,36 @@
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     margin-bottom: 1rem;
+
     @media (min-width: 1024px) {
       flex-direction: column;
       padding-bottom: 0.5rem;
     }
+
     a {
       display: flex;
       justify-content: center;
       text-decoration: none;
     }
+
     .publicidad__espresso,
     .publicidad__dibu,
     .publicidad__matcha {
       animation: headShake 3s linear;
       animation-iteration-count: infinite;
     }
+
     .publicidad__dibu {
       animation-delay: 1.6s;
     }
+
     img {
       max-width: 80%;
+
       @media (min-width: 576px) {
         max-width: 60%;
       }
+
       @media (min-width: 1024px) {
         margin-top: 5rem;
         max-width: 100%;
@@ -137,6 +160,7 @@
 @media (min-width: 1024px) {
   .containerSecasRellenas .publicidad {
     flex-direction: column;
+
     .publicidad {
       padding-bottom: 5rem;
     }
