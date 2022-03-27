@@ -9,20 +9,24 @@ Proximamente se incluirá Bootsrap, SASS y se aplicará SEO.
 
 
 ## Logo
-![Logo](https://i.imgur.com/X6uKLaBt.png)
+![Logo](https://i.imgur.com/xXm1b4x.png)
 
 
 ## Screenshots
 
-![App Screenshot](https://i.imgur.com/pO9hP8i.jpg)
+![App Screenshot](https://i.imgur.com/ncLZJ3G.jpg)
 
-![App Screenshot](https://i.imgur.com/ii3ERbH.jpg)
+![App Screenshot](https://i.imgur.com/03XbgBs.jpg)
 
-![App Screenshot](https://i.imgur.com/zr9ziSh.jpg)
+![App Screenshot](https://i.imgur.com/DXsRPDn.jpg)
 
-![App Screenshot](https://i.imgur.com/KVsTyI7.jpg)
+![App Screenshot](https://i.imgur.com/B2Vz4rt.jpg)
 
-![App Screenshot](https://i.imgur.com/QWddscC.jpg)
+![App Screenshot](https://i.imgur.com/RVznfco.jpg)
+
+![App Screenshot](https://i.imgur.com/ULhaxqs.jpg)
+
+![App Screenshot](https://i.imgur.com/8Dc7A9Y.jpg)
 
 
 ## Authors
