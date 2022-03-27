@@ -9,7 +9,7 @@ Proximamente se incluirá Bootsrap, SASS y se aplicará SEO.
 
 
 ## Logo
-![Logo](https://i.imgur.com/X6uKLaBt.png)
+![Logo](https://imgur.com/a/DLWwtak)
 
 
 ## Screenshots
