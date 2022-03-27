@@ -97,7 +97,7 @@
           }
 
           @media (min-width: 1900px) {
-            top: -12rem;
+            top: -10.5rem;
           }
 
           video,
@@ -155,7 +155,7 @@
           }
 
           @media (min-width: 1900px) {
-            bottom: -13.5rem;
+            bottom: -14rem;
           }
 
           .boton {
@@ -260,6 +260,10 @@
 
     @media (min-width: 1600px) {
       font-size: 16vw;
+    }
+
+    @media (min-width: 1900px) {
+      font-size: 13vw;
     }
   }
 }
